@@ -12,7 +12,7 @@ struct SettingsScreen: View {
     var body: some View {
         NavigationView() {
             SettingsListView()
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
