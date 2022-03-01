@@ -17,15 +17,14 @@ struct NewsList: View {
     var body: some View {
         VStack{
             Text("Category: \(category)")
-                .font(.largeTitle)
-                .frame(maxWidth: .infinity, alignment: .center)
+                .font(.body)
+                .frame(height:20 , alignment: .center)
+            Spacer()
             List {
                 ForEach(newsViewModel.articles) { article in
                     NewsArticleCell(article: article)
-
                 }
             }
-            .listStyle(.grouped)
             .onAppear {
                 newsViewModel.loadNewsByCategory(category: category)
                 self.appeared = 1.0
@@ -33,7 +32,8 @@ struct NewsList: View {
             .onDisappear {self.appeared = 0.0}
             .opacity(appeared)
             .animation(Animation.easeInOut(duration: 5.0), value: appeared)
-            .padding()
+            .listStyle(.plain)
+            Spacer()
         }
     }
 }

@@ -13,22 +13,15 @@ struct NewsArticleCell: View {
     @State private var show = false
 
     var article: Article
-
     var body: some View {
             Text(article.title ?? "")
             .onTapGesture {
                 withAnimation(.easeInOut(duration: 0.8)) {
-                    self.show = true
+                    openURL(URL(string: article.url)!)
+
                 }
             }
-        if show {
-            RoundedRectangle(cornerRadius: 15)
-                .overlay(ReadUrlForm(show: $show, readUrl:article.url ))
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 200, maxHeight: .infinity)
-                .shadow(color: .black, radius: 3)
-                .zIndex(1)
-        }
-
+            .padding()
     }
     
 }

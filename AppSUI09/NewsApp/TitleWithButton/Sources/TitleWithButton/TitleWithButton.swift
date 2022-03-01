@@ -3,10 +3,11 @@ import SwiftUI
 public struct TitleWithButton : View {
     var text:String
     var buttonAction: (() -> Void)
-
-    public init(text: String, buttonAction: @escaping (() -> Void)) {
+    var hideButton: Bool
+    public init(text: String, hideButton:Bool, buttonAction: @escaping (() -> Void)) {
         self.text = text
         self.buttonAction = buttonAction
+        self.hideButton = hideButton
     }
     
     public var body: some View {
@@ -26,6 +27,7 @@ public struct TitleWithButton : View {
                     }.padding()
                         .offset(x: 10, y: -5)
                 }
+                .opacity(hideButton ? 0 : 1)
             }
         }
     }

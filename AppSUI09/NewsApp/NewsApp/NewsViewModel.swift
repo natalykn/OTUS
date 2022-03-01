@@ -22,8 +22,10 @@ final class NewsViewModel: ObservableObject {
     func loadNewsByCategory(category:String) {
         DispatchQueue.global(qos: .background).async {
             DataAPI.newsGet(category: category) { list, error in
-                self.articles.removeAll()
-                self.articles.append(contentsOf: list?.data ?? [])
+                Task { @MainActor in
+                    self.articles.removeAll()
+                    self.articles.append(contentsOf: list?.data ?? [])
+                }
             }
         }
     }

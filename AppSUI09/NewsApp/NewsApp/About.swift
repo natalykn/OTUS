@@ -2,33 +2,20 @@
 //  About.swift
 //  NewsApp
 //
-//  Created by Natalia Andryushina on 2022-01-22.
+//  Created by Natalia Andryushina on 2022-03-01.
 //
 
 import SwiftUI
-import CustomTransitions
 
 struct About: View {
-    @State private var show = false
     var body: some View {
-        return ZStack {
-            Button("Open Categories") {
-                withAnimation(.easeInOut(duration: 0.8)) {
-                    self.show = true
-                }
-            }
-            if show {
-                RoundedRectangle(cornerRadius: 15)
-                    .fill(.gray)
-                    .overlay(CategoriesScreen(show: $show))
-                    .frame(width: 400, height: 500)
-                    .transition(.fly)
-                    .zIndex(1)
-                    
-            }
+        VStack{
+            Text("Описание/Пошаговая инструкция выполнения домашнего задания:\n\n1. Используйте открытое API https://github.com/public-apis/public-apis \n\n2. Сделайте несколько рубрик по разным запросам новостей или городов по погоде (переключение через горизонтальный ScrollView либо SegmentedControl)\n\n3. При переключении рубрик должен изменять содержимое List, пейджинг должен работать\n\n4. Сделать глубину в 3 экрана с помощью кастомного навигейшен-стека\n\n5. При выборе ячейки на каждом экране(разделе SegmentedControl) сделать анимацию ")
+                .font(.callout)
+                .frame( maxHeight: .infinity)
         }
+        .padding()
     }
-    
 }
 
 struct About_Previews: PreviewProvider {

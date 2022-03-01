@@ -13,6 +13,7 @@ struct NewsCategoryCell: View {
         NavigationLink(destination: NewsList(category: category.title)){
             Text(category.title)
         }
+        .padding()
     }
 }
 

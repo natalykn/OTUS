@@ -13,17 +13,17 @@ import TitleWithButton
 struct CategoriesScreen: View {
     @Binding var show: Bool
     @ObservedObject var categoriesModel = CategoryModel()
+    var hideButton: Bool
     var body: some View {
         VStack{
-            TitleWithButton(text: "News Categories:", buttonAction: {withAnimation(.easeInOut(duration: 1.0)) {
+            TitleWithButton(text: "News Categories:", hideButton: hideButton, buttonAction: {withAnimation(.easeInOut(duration: 1.0)) {
                 self.show = false
             }})
             ListOfCategories(categories: categoriesModel.categories)
+            Spacer()
         }
         .padding()
-        .background(.gray)
         .ignoresSafeArea()
-        
     }
     
 }
@@ -32,23 +32,24 @@ struct ListOfCategories: View {
     var categories:[CategoryInfo]
     var body: some View {
         NavigationView {
-            
             VStack{
-                Spacer()
-                Divider().frame(height: 5).background(.tertiary)
+                Divider()
                 ScrollView(.horizontal) {
                     HStack(spacing:10){
                         ForEach(categories) { category in
                             NewsCategoryCell(category: category)
                             Divider().frame(width: 5).background(.tertiary)
                         }
-                    }.padding()
-                }.frame(minHeight: 100, maxHeight: .infinity)
-                
-                Divider().frame(height: 5).background(.tertiary)
+                    }
+                    .frame(minHeight: 0, maxHeight: .greatestFiniteMagnitude)
+                }
+                .frame(height: 100)
+                .transition(.move(edge: .bottom))
+                Divider()
                 Spacer()
             }
-            .background(.gray)
+            .frame(minHeight: 0, maxHeight: .greatestFiniteMagnitude)
+            .background(.clear)
         }
     }
 }
