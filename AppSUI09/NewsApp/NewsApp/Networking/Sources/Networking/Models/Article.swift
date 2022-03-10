@@ -57,4 +57,3 @@ public struct Article: Codable, Hashable {
         try container.encode(url, forKey: .url)
     }
 }
-

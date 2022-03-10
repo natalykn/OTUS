@@ -13,10 +13,10 @@ struct Main: View {
     @State private var currentSubviewIndex = 0
     @State private var showingSubview = false
     @State private var title = "Open Categories with custom animation"
-    
+
     var body: some View {
         NavigationView {
-            VStack(){
+            VStack {
                 Button(title) {
                     withAnimation(.easeInOut(duration: 0.8)) {
                         self.show = true
@@ -28,26 +28,28 @@ struct Main: View {
                     .overlay(CategoriesScreen(show: $show, hideButton: false))
                     .transition(.fly)
                     .zIndex(show.doubleValue)
-                    
-                StackNavigationView(currentSubviewIndex: self.$currentSubviewIndex, showingSubview: self.$showingSubview, subviewByIndex: {index in self.subView(forIndex: index)}){
-                    VStack{
+
+                StackNavigationView(currentSubviewIndex: self.$currentSubviewIndex,
+                                    showingSubview: self.$showingSubview,
+                                    subviewByIndex: { index in self.subView(forIndex: index)}) {
+                    VStack {
                         Button(action: {
                             self.showSubview(withIndex: 0)
-                        }){
+                        }, label: {
                             Text("About")
-                        }
+                        })
                         Button(action: {
                             self.showSubview(withIndex: 1)
-                        }){
+                        }, label: {
                             Text("List of categories")
-                        }
+                        })
                     }.opacity((self.show == false).doubleValue)
                 }
                 Spacer()
             }
         }
     }
-    
+
     private func subView(forIndex index: Int) -> AnyView {
         switch index {
         case 0: return AnyView(About())
@@ -55,9 +57,9 @@ struct Main: View {
         default: return AnyView(Text("Default View").background(Color.blue))
         }
     }
-    
-    private func showSubview(withIndex index:Int){
-        withAnimation(.easeIn(duration: 0.3)){
+
+    private func showSubview(withIndex index: Int) {
+        withAnimation(.easeIn(duration: 0.3)) {
             currentSubviewIndex = index
             showingSubview = true
         }

@@ -37,4 +37,3 @@ public struct ArticleList: Codable, Hashable {
         try container.encodeIfPresent(data, forKey: .data)
     }
 }
-

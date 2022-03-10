@@ -15,10 +15,10 @@ struct NewsList: View {
     @State var appeared: Double = 0
 
     var body: some View {
-        VStack{
+        VStack {
             Text("Category: \(category)")
                 .font(.body)
-                .frame(height:20 , alignment: .center)
+                .frame(height: 20, alignment: .center)
             Spacer()
             List {
                 ForEach(newsViewModel.articles) { article in
@@ -37,7 +37,6 @@ struct NewsList: View {
         }
     }
 }
-
 
 struct NewsList_Previews: PreviewProvider {
     static var previews: some View {

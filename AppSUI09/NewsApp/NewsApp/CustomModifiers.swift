@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct CustomFrameModifier : ViewModifier {
-    var active : Bool
-    
+struct CustomFrameModifier: ViewModifier {
+    var active: Bool
+
     @ViewBuilder func body(content: Content) -> some View {
         if active {
             content.frame(width: widthForCategoriesScreen, height: heightForCategoriesScreen)

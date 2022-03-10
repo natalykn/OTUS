@@ -15,8 +15,10 @@ struct CategoriesScreen: View {
     @ObservedObject var categoriesModel = CategoryModel()
     var hideButton: Bool
     var body: some View {
-        VStack{
-            TitleWithButton(text: "News Categories:", hideButton: hideButton, buttonAction: {withAnimation(.easeInOut(duration: 1.0)) {
+        VStack {
+            TitleWithButton(text: "News Categories:",
+                            hideButton: hideButton,
+                            buttonAction: {withAnimation(.easeInOut(duration: 1.0)) {
                 self.show = false
             }})
             ListOfCategories(categories: categoriesModel.categories)
@@ -25,17 +27,17 @@ struct CategoriesScreen: View {
         .padding()
         .ignoresSafeArea()
     }
-    
+
 }
 
 struct ListOfCategories: View {
-    var categories:[CategoryInfo]
+    var categories: [CategoryInfo]
     var body: some View {
         NavigationView {
-            VStack{
+            VStack {
                 Divider()
                 ScrollView(.horizontal) {
-                    HStack(spacing:10){
+                    HStack(spacing: 10) {
                         ForEach(categories) { category in
                             NewsCategoryCell(category: category)
                             Divider().frame(width: 5).background(.tertiary)
@@ -53,7 +55,3 @@ struct ListOfCategories: View {
         }
     }
 }
-
-
-
-

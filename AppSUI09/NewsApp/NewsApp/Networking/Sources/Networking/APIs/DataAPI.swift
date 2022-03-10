@@ -14,8 +14,8 @@ open class DataAPI {
 
     /**
      News List
-     
-     - parameter category: (query) the category of news 
+
+     - parameter category: (query) the category of news
      - parameter apiResponseQueue: The queue on which api response is dispatched.
      - parameter completion: completion handler to receive the data and the error objects
      */
@@ -34,8 +34,8 @@ open class DataAPI {
     /**
      News List
      - GET /news/
-     - parameter category: (query) the category of news 
-     - returns: RequestBuilder<ArticleList> 
+     - parameter category: (query) the category of news
+     - returns: RequestBuilder<ArticleList>
      */
     open class func newsGetWithRequestBuilder(category: String) -> RequestBuilder<ArticleList> {
         let localVariablePath = "/news"
@@ -44,7 +44,7 @@ open class DataAPI {
 
         var localVariableUrlComponents = URLComponents(string: localVariableURLString)
         localVariableUrlComponents?.queryItems = APIHelper.mapValuesToQueryItems([
-            "category": category.encodeToJSON(),
+            "category": category.encodeToJSON()
         ])
 
         let localVariableNillableHeaders: [String: Any?] = [

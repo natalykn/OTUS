@@ -14,14 +14,14 @@ extension Article: Identifiable {
 }
 
 final class NewsViewModel: ObservableObject {
-    
+
     @Published var articles: [Article] = []
-    
+
     init() {}
-    
-    func loadNewsByCategory(category:String) {
+
+    func loadNewsByCategory(category: String) {
         DispatchQueue.global(qos: .background).async {
-            DataAPI.newsGet(category: category) { list, error in
+            DataAPI.newsGet(category: category) { list, _ in
                 Task { @MainActor in
                     self.articles.removeAll()
                     self.articles.append(contentsOf: list?.data ?? [])
@@ -29,6 +29,5 @@ final class NewsViewModel: ObservableObject {
             }
         }
     }
-    
-    
+
 }

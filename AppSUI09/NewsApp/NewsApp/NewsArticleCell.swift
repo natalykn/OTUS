@@ -14,7 +14,7 @@ struct NewsArticleCell: View {
 
     var article: Article
     var body: some View {
-            Text(article.title ?? "")
+        Text(article.title ?? "")
             .onTapGesture {
                 withAnimation(.easeInOut(duration: 0.8)) {
                     openURL(URL(string: article.url)!)
@@ -23,12 +23,12 @@ struct NewsArticleCell: View {
             }
             .padding()
     }
-    
+
 }
 
 struct NewsArticleCell_Previews: PreviewProvider {
     static var previews: some View {
-        let article = Article(title:"Title", url: "https://www.google.com/")
+        let article = Article(title: "Title", url: "https://www.google.com/")
         NewsArticleCell(article: article)
     }
 }

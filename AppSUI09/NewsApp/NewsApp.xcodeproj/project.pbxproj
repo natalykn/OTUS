@@ -24,7 +24,7 @@
 		D88C76AD279C376E00CBD267 /* TitleWithButton in Frameworks */ = {isa = PBXBuildFile; productRef = D88C76AC279C376E00CBD267 /* TitleWithButton */; };
 		D8AF385127CE84CB00EF7EEF /* CustomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AF385027CE84CB00EF7EEF /* CustomExtensions.swift */; };
 		D8AF385327CE892000EF7EEF /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AF385227CE892000EF7EEF /* CustomModifiers.swift */; };
-		D8AF385527CE8C4700EF7EEF /* CommonLets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AF385427CE8C4700EF7EEF /* CommonLets.swift */; };
+		D8AF385527CE8C4700EF7EEF /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AF385427CE8C4700EF7EEF /* Consts.swift */; };
 		D8AF385827CE934300EF7EEF /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AF385727CE934300EF7EEF /* About.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +47,7 @@
 		D88C76AB279C36B700CBD267 /* TitleWithButton */ = {isa = PBXFileReference; lastKnownFileType = text; path = TitleWithButton; sourceTree = SOURCE_ROOT; };
 		D8AF385027CE84CB00EF7EEF /* CustomExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExtensions.swift; sourceTree = "<group>"; };
 		D8AF385227CE892000EF7EEF /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
-		D8AF385427CE8C4700EF7EEF /* CommonLets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonLets.swift; sourceTree = "<group>"; };
+		D8AF385427CE8C4700EF7EEF /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		D8AF385727CE934300EF7EEF /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,7 +148,7 @@
 		D8AF385627CE8D6C00EF7EEF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				D8AF385427CE8C4700EF7EEF /* CommonLets.swift */,
+				D8AF385427CE8C4700EF7EEF /* Consts.swift */,
 				D8AF385027CE84CB00EF7EEF /* CustomExtensions.swift */,
 				D8AF385227CE892000EF7EEF /* CustomModifiers.swift */,
 			);
@@ -165,6 +165,7 @@
 				D864D034277C9B33001A61A3 /* Sources */,
 				D864D035277C9B33001A61A3 /* Frameworks */,
 				D864D036277C9B33001A61A3 /* Resources */,
+				D8133B1727D9C5BE000143BC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -225,6 +226,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D8133B1727D9C5BE000143BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint --fix\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D864D034277C9B33001A61A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -234,7 +255,7 @@
 				D88C769E279C2BBE00CBD267 /* Main.swift in Sources */,
 				D864D0A3277CC692001A61A3 /* NewsList.swift in Sources */,
 				D8074C9327AC44C40083F541 /* StackNavigationView.swift in Sources */,
-				D8AF385527CE8C4700EF7EEF /* CommonLets.swift in Sources */,
+				D8AF385527CE8C4700EF7EEF /* Consts.swift in Sources */,
 				D88C76A3279C2F7B00CBD267 /* NewsCategoryCell.swift in Sources */,
 				D864D0A1277CB429001A61A3 /* CategoryModel.swift in Sources */,
 				D864D099277CA64E001A61A3 /* CategoriesScreen.swift in Sources */,

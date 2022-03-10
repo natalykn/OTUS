@@ -29,4 +29,3 @@ public struct ErrorModel: Codable, Hashable {
         try container.encode(error, forKey: .error)
     }
 }
-
