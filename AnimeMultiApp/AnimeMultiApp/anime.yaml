@@ -1,0 +1,352 @@
+openapi: 3.0.0
+info:
+  title: Jikan API
+  description: Jikan is an **Unofficial** MyAnimeList API.
+  termsOfService: 'https://jikan.moe/terms'
+  contact:
+    name: API Support (Discord)
+    url: 'http://discord.jikan.moe'
+  license:
+    name: MIT
+    url: 'https://github.com/jikan-me/jikan-rest/blob/master/LICENSE'
+  version: 4.0.0
+servers:
+  - url: 'https://api.jikan.moe/v4'
+    description: Jikan REST API Beta
+paths:
+  /anime:
+    get:
+      tags:
+        - anime
+      operationId: getAnimeSearch
+      parameters:
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+        - name: q
+          in: query
+          schema:
+            type: string
+        - name: type
+          in: query
+          schema:
+            $ref: '#/components/schemas/anime_search_query_type'
+        - name: score
+          in: query
+          schema:
+            type: number
+        - name: min_score
+          in: query
+          description: Set a minimum score for results.
+          schema:
+            type: number
+        - name: max_score
+          in: query
+          description: Set a maximum score for results
+          schema:
+            type: number
+        - name: status
+          in: query
+          schema:
+            $ref: '#/components/schemas/anime_search_query_status'
+        - name: rating
+          in: query
+          schema:
+            $ref: '#/components/schemas/anime_search_query_rating'
+        - name: sfw
+          in: query
+          description: Filter out Adult entries
+          schema:
+            type: boolean
+        - name: genres
+          in: query
+          description: >-
+            Filter by genre(s) IDs. Can pass multiple with a comma as a
+            delimiter. e.g 1,2,3
+          schema:
+            type: string
+        - name: genres_exclude
+          in: query
+          description: >-
+            Exclude genre(s) IDs. Can pass multiple with a comma as a delimiter.
+            e.g 1,2,3
+          schema:
+            type: string
+        - name: order_by
+          in: query
+          schema:
+            $ref: '#/components/schemas/anime_search_query_orderby'
+        - name: sort
+          in: query
+          schema:
+            $ref: '#/components/schemas/search_query_sort'
+        - name: letter
+          in: query
+          description: Return entries starting with the given letter
+          schema:
+            type: string
+        - name: producer
+          in: query
+          description: >-
+            Filter by producer(s) IDs. Can pass multiple with a comma as a
+            delimiter. e.g 1,2,3
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Returns search results for anime
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/anime_search'
+        '400':
+          description: 'Error: Bad request. When required parameters were not supplied.'
+components:
+  schemas:
+    trailer:
+      description: Youtube Details
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/trailer_base'
+        - $ref: '#/components/schemas/trailer_images'
+    trailer_base:
+      description: Youtube Details
+      properties:
+        youtube_id:
+          description: YouTube ID
+          type: string
+        url:
+          description: YouTube URL
+          type: string
+        embed_url:
+          description: Parsed Embed URL
+          type: string
+      type: object
+    trailer_images:
+      description: Youtube Images
+      properties:
+        images:
+          properties:
+            default_image_url:
+              description: Default Image Size URL (120x90)
+              type: string
+            small_image_url:
+              description: Small Image Size URL (640x480)
+              type: string
+            medium_image_url:
+              description: Medium Image Size URL (320x180)
+              type: string
+            large_image_url:
+              description: Large Image Size URL (480x360)
+              type: string
+            maximum_image_url:
+              description: Maximum Image Size URL (1280x720)
+              type: string
+          type: object
+      type: object
+    anime_images:
+      properties:
+        jpg:
+          description: Available images in JPG
+          properties:
+            image_url:
+              description: Image URL JPG (225x335)
+              type: string
+            small_image_url:
+              description: Small Image URL JPG (50x74)
+              type: string
+            large_image_url:
+              description: Image URL JPG (300x446)
+              type: string
+          type: object
+        webp:
+          description: Available images in WEBP
+          properties:
+            image_url:
+              description: Image URL WEBP (225x335)
+              type: string
+            small_image_url:
+              description: Small Image URL WEBP (50x74)
+              type: string
+            large_image_url:
+              description: Image URL WEBP (300x446)
+              type: string
+          type: object
+      type: object
+    search_query_sort:
+      description: Characters Search Query Sort
+      type: string
+      enum:
+        - desc
+        - asc
+    anime_search_query_type:
+      description: Available Anime types
+      type: string
+      enum:
+        - tv
+        - movie
+        - ova
+        - special
+        - ona
+        - music
+    anime_search_query_status:
+      description: Available Anime statuses
+      type: string
+      enum:
+        - airing
+        - complete
+        - upcoming
+    anime_search_query_rating:
+      description: >-
+        Available Anime audience ratings<br><br><b>Ratings</b><br><ul><li>G -
+        All Ages</li><li>PG - Children</li><li>PG-13 - Teens 13 or
+        older</li><li>R - 17+ (violence & profanity)</li><li>R+ - Mild
+        Nudity</li><li>Rx - Hentai</li></ul>
+      type: string
+      enum:
+        - g
+        - pg
+        - pg13
+        - r17
+        - r
+        - rx
+    anime_search_query_orderby:
+      description: Available Anime order_by properties
+      type: string
+      enum:
+        - mal_id
+        - title
+        - type
+        - rating
+        - start_date
+        - end_date
+        - episodes
+        - score
+        - scored_by
+        - rank
+        - popularity
+        - members
+        - favorites
+    anime_search:
+      description: Anime Collection Resource
+      allOf:
+        - properties:
+            data:
+              type: array
+              items:
+                $ref: '#/components/schemas/anime'
+          type: object
+        - $ref: '#/components/schemas/pagination'
+    pagination:
+      properties:
+        pagination:
+          properties:
+            last_visible_page:
+              type: integer
+            has_next_page:
+              type: boolean
+          type: object
+      type: object
+    anime:
+      description: Anime Resource
+      required:
+        - mal_id
+      type: object
+      properties:
+        mal_id:
+          description: MyAnimeList ID
+          type: integer
+        url:
+          description: MyAnimeList URL
+          type: string
+        images:
+          $ref: '#/components/schemas/anime_images'
+        trailer:
+          $ref: '#/components/schemas/trailer_base'
+        title:
+          description: Title
+          type: string
+        title_english:
+          description: English Title
+          type: string
+        title_japanese:
+          description: Japanese Title
+          type: string
+        title_synonyms:
+          description: Other Titles
+          type: array
+          items:
+            type: string
+        type:
+          description: Anime Type
+          type: string
+          enum:
+            - TV
+            - OVA
+            - Movie
+            - Special
+            - ONA
+            - Music
+        source:
+          description: Original Material/Source adapted from
+          type: string
+        episodes:
+          description: Episode count
+          type: integer
+        status:
+          description: Airing status
+          type: string
+          enum:
+            - Finished Airing
+            - Currently Airing
+            - Not yet aired
+        airing:
+          description: Airing boolean
+          type: boolean
+        duration:
+          description: Parsed raw duration
+          type: string
+        score:
+          description: Score
+          type: number
+          format: float
+        scored_by:
+          description: Number of users
+          type: integer
+        rank:
+          description: Ranking
+          type: integer
+        popularity:
+          description: Popularity
+          type: integer
+        members:
+          description: Number of users who have added this entry to their list
+          type: integer
+        favorites:
+          description: Number of users who have favorited this entry
+          type: integer
+        synopsis:
+          description: Synopsis
+          type: string
+        background:
+          description: Background
+          type: string
+        year:
+          description: Year
+          type: integer
+  responses:
+    '400':
+      description: 'Error: Bad request. When required parameters were not supplied.'
+  parameters:
+    page:
+      name: page
+      in: query
+      schema:
+        type: integer
+    limit:
+      name: limit
+      in: query
+      schema:
+        type: integer
+externalDocs:
+  description: About
+  url: 'https://jikan.moe'
