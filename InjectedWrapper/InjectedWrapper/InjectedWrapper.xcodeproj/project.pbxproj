@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D821E1BE27EF49ED0046AD93 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D821E1BD27EF49ED0046AD93 /* Playlist.swift */; };
+		D8467E9A2789E9E30021FA16 /* InjectedWrapperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8467E992789E9E30021FA16 /* InjectedWrapperApp.swift */; };
+		D8467E9C2789E9E30021FA16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8467E9B2789E9E30021FA16 /* ContentView.swift */; };
+		D8467E9E2789E9E50021FA16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8467E9D2789E9E50021FA16 /* Assets.xcassets */; };
+		D8467EA12789E9E50021FA16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8467EA02789E9E50021FA16 /* Preview Assets.xcassets */; };
+		D8467EA92789EA350021FA16 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8467EA82789EA350021FA16 /* ProfileService.swift */; };
+		D8467EAD2789EC4F0021FA16 /* PlaylistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8467EAC2789EC4F0021FA16 /* PlaylistService.swift */; };
+		D86641B42789EE710009B4D0 /* ServiceLocator in Frameworks */ = {isa = PBXBuildFile; productRef = D86641B32789EE710009B4D0 /* ServiceLocator */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D821E1BD27EF49ED0046AD93 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		D8467E962789E9E30021FA16 /* InjectedWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InjectedWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8467E992789E9E30021FA16 /* InjectedWrapperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedWrapperApp.swift; sourceTree = "<group>"; };
+		D8467E9B2789E9E30021FA16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D8467E9D2789E9E50021FA16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8467EA02789E9E50021FA16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8467EA82789EA350021FA16 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
+		D8467EAC2789EC4F0021FA16 /* PlaylistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistService.swift; sourceTree = "<group>"; };
+		D86641B12789EE240009B4D0 /* ServiceLocator */ = {isa = PBXFileReference; lastKnownFileType = text; path = ServiceLocator; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8467E932789E9E30021FA16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86641B42789EE710009B4D0 /* ServiceLocator in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8467E8D2789E9E30021FA16 = {
+			isa = PBXGroup;
+			children = (
+				D8467E982789E9E30021FA16 /* InjectedWrapper */,
+				D8467E972789E9E30021FA16 /* Products */,
+				D86641B22789EE710009B4D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8467E972789E9E30021FA16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8467E962789E9E30021FA16 /* InjectedWrapper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8467E982789E9E30021FA16 /* InjectedWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				D86641B12789EE240009B4D0 /* ServiceLocator */,
+				D8467EA72789EA040021FA16 /* Services */,
+				D8467E992789E9E30021FA16 /* InjectedWrapperApp.swift */,
+				D8467E9B2789E9E30021FA16 /* ContentView.swift */,
+				D821E1BD27EF49ED0046AD93 /* Playlist.swift */,
+				D8467E9D2789E9E50021FA16 /* Assets.xcassets */,
+				D8467E9F2789E9E50021FA16 /* Preview Content */,
+			);
+			path = InjectedWrapper;
+			sourceTree = "<group>";
+		};
+		D8467E9F2789E9E50021FA16 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D8467EA02789E9E50021FA16 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8467EA72789EA040021FA16 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D8467EA82789EA350021FA16 /* ProfileService.swift */,
+				D8467EAC2789EC4F0021FA16 /* PlaylistService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D86641B22789EE710009B4D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8467E952789E9E30021FA16 /* InjectedWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8467EA42789E9E50021FA16 /* Build configuration list for PBXNativeTarget "InjectedWrapper" */;
+			buildPhases = (
+				D8467E922789E9E30021FA16 /* Sources */,
+				D8467E932789E9E30021FA16 /* Frameworks */,
+				D8467E942789E9E30021FA16 /* Resources */,
+				D821E1BF27EF561D0046AD93 /* SwiftLint Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InjectedWrapper;
+			packageProductDependencies = (
+				D86641B32789EE710009B4D0 /* ServiceLocator */,
+			);
+			productName = InjectedWrapper;
+			productReference = D8467E962789E9E30021FA16 /* InjectedWrapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8467E8E2789E9E30021FA16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D8467E952789E9E30021FA16 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D8467E912789E9E30021FA16 /* Build configuration list for PBXProject "InjectedWrapper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8467E8D2789E9E30021FA16;
+			productRefGroup = D8467E972789E9E30021FA16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8467E952789E9E30021FA16 /* InjectedWrapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8467E942789E9E30021FA16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8467EA12789E9E50021FA16 /* Preview Assets.xcassets in Resources */,
+				D8467E9E2789E9E50021FA16 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D821E1BF27EF561D0046AD93 /* SwiftLint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ${PROJECT_DIR}/../\n\"${PODS_ROOT}/SwiftLint/swiftlint\" --config \"${PROJECT_DIR}/../.swiftlint.yml\"\n\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint --fix\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8467E922789E9E30021FA16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8467EAD2789EC4F0021FA16 /* PlaylistService.swift in Sources */,
+				D8467E9C2789E9E30021FA16 /* ContentView.swift in Sources */,
+				D8467E9A2789E9E30021FA16 /* InjectedWrapperApp.swift in Sources */,
+				D8467EA92789EA350021FA16 /* ProfileService.swift in Sources */,
+				D821E1BE27EF49ED0046AD93 /* Playlist.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D8467EA22789E9E50021FA16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8467EA32789E9E50021FA16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8467EA52789E9E50021FA16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InjectedWrapper/Preview Content\"";
+				DEVELOPMENT_TEAM = 6RF64JAM9R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.natalykn.InjectedWrapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8467EA62789E9E50021FA16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"InjectedWrapper/Preview Content\"";
+				DEVELOPMENT_TEAM = 6RF64JAM9R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.natalykn.InjectedWrapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8467E912789E9E30021FA16 /* Build configuration list for PBXProject "InjectedWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8467EA22789E9E50021FA16 /* Debug */,
+				D8467EA32789E9E50021FA16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8467EA42789E9E50021FA16 /* Build configuration list for PBXNativeTarget "InjectedWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8467EA52789E9E50021FA16 /* Debug */,
+				D8467EA62789E9E50021FA16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D86641B32789EE710009B4D0 /* ServiceLocator */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ServiceLocator;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D8467E8E2789E9E30021FA16 /* Project object */;
+}
