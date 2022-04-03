@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var model = ServicesModel()
+
     @State var name:String = ""
     @State private var isPresentedPlaylistView = false
     var body: some View {
         NavigationView {
             VStack(alignment: .center) {
                 Spacer()
-                NavigationLink(destination: Playlist(),
+                NavigationLink(destination: Playlist().environmentObject(model),
                                isActive: $isPresentedPlaylistView) { EmptyView()}
                 TextField("Name", text: $name)
                     .autocapitalization(.none)
@@ -25,16 +27,14 @@ struct ContentView: View {
                     Spacer()
                     Button("Log in") {
                         if !name.isEmpty {
-                            ProfileService.service.update(name: name)
-                            PlaylistService.service.load()
+                            model.loginAndLoadPlaylist(login: name)
                             isPresentedPlaylistView = true
                         }
                     }
                     Spacer()
                     Button("Log out") {
                         name = ""
-                        PlaylistService.service.clear()
-                        ProfileService.service.clear()
+                        model.clear()
                     }
                     Spacer()
                 }

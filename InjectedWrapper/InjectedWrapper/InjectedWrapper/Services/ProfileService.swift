@@ -17,16 +17,11 @@ final class ProfileService: IService {
         }
 
         let service = ProfileService()
-        ServiceLocator.addService(service)
         return service
     }
 
     func clear() {
         self.info = ProfileInfo()
-    }
-
-    func remove() {
-        ServiceLocator.removeService(self)
     }
 
     func update(name: String) {

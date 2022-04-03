@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct InjectedWrapperApp: App {
+    init() {
+        Configurator.shared.register()
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -4,7 +4,6 @@ public protocol IService {
     static var service: Self {get}
 
     func clear()
-    func remove()
 }
 public protocol IServiceLocator {
     func service<T>() -> T?
@@ -12,7 +11,7 @@ public protocol IServiceLocator {
 
 public class ServiceLocator: IServiceLocator {
 
-    static let instance = ServiceLocator()
+    public static let instance = ServiceLocator()
     lazy var services: [String: Any] = [:]
 
     // MARK: - Public methods

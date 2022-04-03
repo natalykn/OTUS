@@ -15,18 +15,12 @@ final class PlaylistService:IService {
         if let service: PlaylistService = ServiceLocator.service() {
             return service
         }
-
         let service = PlaylistService()
-        ServiceLocator.addService(service)
         return service
     }
 
     func clear() {
         info.removeAll()
-    }
-
-    func remove() {
-        ServiceLocator.removeService(self)
     }
 
     func load() {

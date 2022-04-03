@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct Playlist: View {
+    @EnvironmentObject var model: ServicesModel
+
     var body: some View {
         VStack {
-            Text(ProfileService.service.info.name).font(.title)
+            Text(model.name()).font(.title)
             List {
-                ForEach(PlaylistService.service.info) { info in
+                ForEach(model.tracks()) { info in
                     Form {
                         VStack {
                             Text(info.nameTrack).font(.body)

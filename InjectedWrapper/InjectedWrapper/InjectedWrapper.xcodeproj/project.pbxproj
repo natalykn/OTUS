@@ -15,6 +15,9 @@
 		D8467EA92789EA350021FA16 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8467EA82789EA350021FA16 /* ProfileService.swift */; };
 		D8467EAD2789EC4F0021FA16 /* PlaylistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8467EAC2789EC4F0021FA16 /* PlaylistService.swift */; };
 		D86641B42789EE710009B4D0 /* ServiceLocator in Frameworks */ = {isa = PBXBuildFile; productRef = D86641B32789EE710009B4D0 /* ServiceLocator */; };
+		D8CBC23127F98D1B008BAB6A /* ServicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CBC23027F98D1B008BAB6A /* ServicesModel.swift */; };
+		D8CBC23327F99692008BAB6A /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CBC23227F99692008BAB6A /* Injected.swift */; };
+		D8CBC23527F99966008BAB6A /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CBC23427F99966008BAB6A /* Configurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		D8467EA82789EA350021FA16 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
 		D8467EAC2789EC4F0021FA16 /* PlaylistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistService.swift; sourceTree = "<group>"; };
 		D86641B12789EE240009B4D0 /* ServiceLocator */ = {isa = PBXFileReference; lastKnownFileType = text; path = ServiceLocator; sourceTree = SOURCE_ROOT; };
+		D8CBC23027F98D1B008BAB6A /* ServicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesModel.swift; sourceTree = "<group>"; };
+		D8CBC23227F99692008BAB6A /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
+		D8CBC23427F99966008BAB6A /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +68,14 @@
 			isa = PBXGroup;
 			children = (
 				D86641B12789EE240009B4D0 /* ServiceLocator */,
+				D8CBC22F27F98CE9008BAB6A /* Model */,
 				D8467EA72789EA040021FA16 /* Services */,
 				D8467E992789E9E30021FA16 /* InjectedWrapperApp.swift */,
 				D8467E9B2789E9E30021FA16 /* ContentView.swift */,
 				D821E1BD27EF49ED0046AD93 /* Playlist.swift */,
 				D8467E9D2789E9E50021FA16 /* Assets.xcassets */,
 				D8467E9F2789E9E50021FA16 /* Preview Content */,
+				D8CBC23227F99692008BAB6A /* Injected.swift */,
 			);
 			path = InjectedWrapper;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 			children = (
 				D8467EA82789EA350021FA16 /* ProfileService.swift */,
 				D8467EAC2789EC4F0021FA16 /* PlaylistService.swift */,
+				D8CBC23427F99966008BAB6A /* Configurator.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -94,6 +103,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8CBC22F27F98CE9008BAB6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8CBC23027F98D1B008BAB6A /* ServicesModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8CBC23527F99966008BAB6A /* Configurator.swift in Sources */,
 				D8467EAD2789EC4F0021FA16 /* PlaylistService.swift in Sources */,
+				D8CBC23127F98D1B008BAB6A /* ServicesModel.swift in Sources */,
+				D8CBC23327F99692008BAB6A /* Injected.swift in Sources */,
 				D8467E9C2789E9E30021FA16 /* ContentView.swift in Sources */,
 				D8467E9A2789E9E30021FA16 /* InjectedWrapperApp.swift in Sources */,
 				D8467EA92789EA350021FA16 /* ProfileService.swift in Sources */,
