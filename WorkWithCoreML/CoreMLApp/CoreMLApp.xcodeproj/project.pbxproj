@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D8582C0928040ABA00EFF1C0 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8582C0828040ABA00EFF1C0 /* ImageExtension.swift */; };
-		D8582C0B2805360200EFF1C0 /* CatsAndDogsModelP.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D8582C0A2805360200EFF1C0 /* CatsAndDogsModelP.mlmodel */; };
+		D8582C152805CCA100EFF1C0 /* CatsAndDogsModelP.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D8582C142805CCA100EFF1C0 /* CatsAndDogsModelP.mlmodel */; };
 		D8CBC24327F9BA47008BAB6A /* CoreMLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CBC24227F9BA47008BAB6A /* CoreMLApp.swift */; };
 		D8CBC24527F9BA47008BAB6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CBC24427F9BA47008BAB6A /* ContentView.swift */; };
 		D8CBC24727F9BA49008BAB6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8CBC24627F9BA49008BAB6A /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		D8582C0828040ABA00EFF1C0 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
-		D8582C0A2805360200EFF1C0 /* CatsAndDogsModelP.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CatsAndDogsModelP.mlmodel; path = ../../CatsAndDogsModelP.mlmodel; sourceTree = "<group>"; };
+		D8582C142805CCA100EFF1C0 /* CatsAndDogsModelP.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CatsAndDogsModelP.mlmodel; path = ../../CatsAndDogsModelP.mlmodel; sourceTree = "<group>"; };
 		D8CBC23F27F9BA47008BAB6A /* CoreMLApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8CBC24227F9BA47008BAB6A /* CoreMLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLApp.swift; sourceTree = "<group>"; };
 		D8CBC24427F9BA47008BAB6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		D8CBC25027F9BA6C008BAB6A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D8582C0A2805360200EFF1C0 /* CatsAndDogsModelP.mlmodel */,
+				D8582C142805CCA100EFF1C0 /* CatsAndDogsModelP.mlmodel */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -191,8 +191,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8CBC25A27F9D616008BAB6A /* Classifier.swift in Sources */,
+				D8582C152805CCA100EFF1C0 /* CatsAndDogsModelP.mlmodel in Sources */,
 				D8CBC25E27F9E1F9008BAB6A /* PhotoPicker.swift in Sources */,
-				D8582C0B2805360200EFF1C0 /* CatsAndDogsModelP.mlmodel in Sources */,
 				D8CBC24527F9BA47008BAB6A /* ContentView.swift in Sources */,
 				D8CBC24327F9BA47008BAB6A /* CoreMLApp.swift in Sources */,
 				D8CBC25C27F9D9B0008BAB6A /* ImageClassifier.swift in Sources */,
