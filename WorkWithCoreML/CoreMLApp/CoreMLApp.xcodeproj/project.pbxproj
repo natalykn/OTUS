@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D8582C0928040ABA00EFF1C0 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8582C0828040ABA00EFF1C0 /* ImageExtension.swift */; };
-		D8582C152805CCA100EFF1C0 /* CatsAndDogsModelP.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D8582C142805CCA100EFF1C0 /* CatsAndDogsModelP.mlmodel */; };
 		D8CBC24327F9BA47008BAB6A /* CoreMLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CBC24227F9BA47008BAB6A /* CoreMLApp.swift */; };
 		D8CBC24527F9BA47008BAB6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CBC24427F9BA47008BAB6A /* ContentView.swift */; };
 		D8CBC24727F9BA49008BAB6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8CBC24627F9BA49008BAB6A /* Assets.xcassets */; };
@@ -16,6 +15,7 @@
 		D8CBC25A27F9D616008BAB6A /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CBC25927F9D615008BAB6A /* Classifier.swift */; };
 		D8CBC25C27F9D9B0008BAB6A /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CBC25B27F9D9B0008BAB6A /* ImageClassifier.swift */; };
 		D8CBC25E27F9E1F9008BAB6A /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CBC25D27F9E1F9008BAB6A /* PhotoPicker.swift */; };
+		D8FDF641280812650045D6C0 /* CatsAndDogsModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D8FDF640280812640045D6C0 /* CatsAndDogsModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +29,7 @@
 		D8CBC25927F9D615008BAB6A /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 		D8CBC25B27F9D9B0008BAB6A /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
 		D8CBC25D27F9E1F9008BAB6A /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		D8FDF640280812640045D6C0 /* CatsAndDogsModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CatsAndDogsModel.mlmodel; path = ../../CatsAndDogsModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +94,7 @@
 		D8CBC25027F9BA6C008BAB6A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D8FDF640280812640045D6C0 /* CatsAndDogsModel.mlmodel */,
 				D8582C142805CCA100EFF1C0 /* CatsAndDogsModelP.mlmodel */,
 			);
 			name = Model;
@@ -191,10 +193,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8CBC25A27F9D616008BAB6A /* Classifier.swift in Sources */,
-				D8582C152805CCA100EFF1C0 /* CatsAndDogsModelP.mlmodel in Sources */,
 				D8CBC25E27F9E1F9008BAB6A /* PhotoPicker.swift in Sources */,
 				D8CBC24527F9BA47008BAB6A /* ContentView.swift in Sources */,
 				D8CBC24327F9BA47008BAB6A /* CoreMLApp.swift in Sources */,
+				D8FDF641280812650045D6C0 /* CatsAndDogsModel.mlmodel in Sources */,
 				D8CBC25C27F9D9B0008BAB6A /* ImageClassifier.swift in Sources */,
 				D8582C0928040ABA00EFF1C0 /* ImageExtension.swift in Sources */,
 			);

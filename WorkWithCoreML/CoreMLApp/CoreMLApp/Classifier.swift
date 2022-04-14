@@ -15,7 +15,7 @@ struct Classifier {
 
     mutating func detect(ciImage: CIImage) {
 
-        guard let model = try? VNCoreMLModel(for: CatsAndDogsModelP(configuration: MLModelConfiguration()).model)
+        guard let model = try? VNCoreMLModel(for: CatsAndDogsModel(configuration: MLModelConfiguration()).model)
         else {
             return
         }
@@ -37,7 +37,7 @@ struct Classifier {
 
     mutating func detect(cgImage: CGImage) {
 
-        guard let model = try? VNCoreMLModel(for: CatsAndDogsModelP(configuration: MLModelConfiguration()).model)
+        guard let model = try? VNCoreMLModel(for: CatsAndDogsModel(configuration: MLModelConfiguration()).model)
         else {
             return
         }
@@ -59,7 +59,7 @@ struct Classifier {
 
     mutating func detect(cvPixelBuffer: CVPixelBuffer) {
 
-        guard let model = try? CatsAndDogsModelP(configuration: MLModelConfiguration())
+        guard let model = try? CatsAndDogsModel(configuration: MLModelConfiguration())
         else {
             return
         }
