@@ -1,0 +1,3 @@
+* text=auto
+Sources/Info.plist merge=keepTheir
+Sources/Settings.bundle/Root.plist merge=keepTheir

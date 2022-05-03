@@ -67,3 +67,6 @@ fastlane/test_output
 
 iOSInjectionProject/
 .DS_Store
+/Fungiincognita/Fungi incognita/Fungi Incognita/GoogleService-Info.plist
+/Fungiincognita/Fungi incognita/Fungi-Incognita-Info.plist
+/Fungiincognita/Fungi incognita/Classifier/FungiClassifierWithAugms.mlmodel

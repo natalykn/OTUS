@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D839EB89281D28D60018B030 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB88281D28D60018B030 /* HomeView.swift */; };
+		D839EB8B281D28EF0018B030 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB8A281D28EF0018B030 /* ProfileView.swift */; };
+		D839EB8D281D29170018B030 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB8C281D29170018B030 /* SettingsView.swift */; };
+		D839EB8F281D29840018B030 /* IdentificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB8E281D29840018B030 /* IdentificationView.swift */; };
+		D839EB91281D30A30018B030 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB90281D30A30018B030 /* Extensions.swift */; };
+		D839EB93281D3F2A0018B030 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB92281D3F2A0018B030 /* TabBarButton.swift */; };
+		D839EB95281D40110018B030 /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB94281D40110018B030 /* TabBarShape.swift */; };
+		D839EB97281D4D2E0018B030 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB96281D4D2E0018B030 /* Enums.swift */; };
+		D839EB99281D4FD10018B030 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB98281D4FD10018B030 /* TabBarItem.swift */; };
+		D839EB9C281D5A0F0018B030 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB9A281D5A0F0018B030 /* ImageClassifier.swift */; };
+		D839EB9D281D5A0F0018B030 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB9B281D5A0F0018B030 /* Classifier.swift */; };
+		D839EBA0281D5A310018B030 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB9F281D5A310018B030 /* ImageExtension.swift */; };
+		D839EBA2281D5A550018B030 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBA1281D5A550018B030 /* PhotoPicker.swift */; };
+		D839EBA52821161D0018B030 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBA42821161D0018B030 /* UserSettings.swift */; };
+		D839EBA7282117160018B030 /* HeaderForProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBA6282117160018B030 /* HeaderForProfile.swift */; };
+		D839EBAA2821178C0018B030 /* ColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBA92821178C0018B030 /* ColorSlider.swift */; };
+		D839EBAC282117C80018B030 /* SettingsViewForProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBAB282117C80018B030 /* SettingsViewForProfile.swift */; };
+		D839EBAF28211DCA0018B030 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBAE28211DCA0018B030 /* SettingsStore.swift */; };
+		D839EBB2282127650018B030 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBB1282127650018B030 /* Help.swift */; };
+		D839EBB428212B1F0018B030 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D839EBB328212B1F0018B030 /* Launch Screen.storyboard */; };
+		D839EBB628212CC10018B030 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBB528212CC10018B030 /* Option.swift */; };
+		D839EBB828212D6D0018B030 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBB728212D6D0018B030 /* Settings.swift */; };
+		D839EBBF28217CD50018B030 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D839EBBE28217CD50018B030 /* GoogleService-Info.plist */; };
+		D86B1583281D0711004A42DD /* FungiIncognitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1582281D0711004A42DD /* FungiIncognitaApp.swift */; };
+		D86B1585281D0711004A42DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1584281D0711004A42DD /* ContentView.swift */; };
+		D86B1587281D0714004A42DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86B1586281D0714004A42DD /* Assets.xcassets */; };
+		D86B158A281D0714004A42DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86B1589281D0714004A42DD /* Preview Assets.xcassets */; };
+		D86B1591281D154C004A42DD /* FungiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1590281D154C004A42DD /* FungiList.swift */; };
+		D86B1595281D190D004A42DD /* FungiClassifierWithAugms.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D86B1594281D190D004A42DD /* FungiClassifierWithAugms.mlmodel */; };
+		D86B1597281D19E7004A42DD /* FungiShortInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1596281D19E7004A42DD /* FungiShortInfo.swift */; };
+		D86B159A281D203B004A42DD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1599281D203B004A42DD /* Colors.swift */; };
+		D86B159D281D2178004A42DD /* SearchBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B159C281D2178004A42DD /* SearchBlock.swift */; };
+		EF7AC2221CED9D3B08B5DB1B /* Pods_Fungi_Incognita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014C9780B7E56DDCD042AE69 /* Pods_Fungi_Incognita.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		014C9780B7E56DDCD042AE69 /* Pods_Fungi_Incognita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fungi_Incognita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26576170BFFD7726410BEA1E /* Pods-Fungi Incognita.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fungi Incognita.release.xcconfig"; path = "Target Support Files/Pods-Fungi Incognita/Pods-Fungi Incognita.release.xcconfig"; sourceTree = "<group>"; };
+		7FD1BE59AC6DCB7723D9FE74 /* Pods-Fungi Incognita.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fungi Incognita.debug.xcconfig"; path = "Target Support Files/Pods-Fungi Incognita/Pods-Fungi Incognita.debug.xcconfig"; sourceTree = "<group>"; };
+		D839EB88281D28D60018B030 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Views/HomeView.swift; sourceTree = "<group>"; };
+		D839EB8A281D28EF0018B030 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D839EB8C281D29170018B030 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D839EB8E281D29840018B030 /* IdentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IdentificationView.swift; path = Views/IdentificationView.swift; sourceTree = "<group>"; };
+		D839EB90281D30A30018B030 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D839EB92281D3F2A0018B030 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarButton.swift; path = CustomUI/TabBarButton.swift; sourceTree = "<group>"; };
+		D839EB94281D40110018B030 /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
+		D839EB96281D4D2E0018B030 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = CommonLets/Enums.swift; sourceTree = "<group>"; };
+		D839EB98281D4FD10018B030 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarItem.swift; path = CustomUI/TabBarItem.swift; sourceTree = "<group>"; };
+		D839EB9A281D5A0F0018B030 /* ImageClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageClassifier.swift; path = Classifier/ImageClassifier.swift; sourceTree = SOURCE_ROOT; };
+		D839EB9B281D5A0F0018B030 /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Classifier.swift; path = Classifier/Classifier.swift; sourceTree = SOURCE_ROOT; };
+		D839EB9F281D5A310018B030 /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageExtension.swift; path = Extensions/ImageExtension.swift; sourceTree = "<group>"; };
+		D839EBA1281D5A550018B030 /* PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoPicker.swift; path = Views/PhotoPicker.swift; sourceTree = "<group>"; };
+		D839EBA42821161D0018B030 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		D839EBA6282117160018B030 /* HeaderForProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderForProfile.swift; sourceTree = "<group>"; };
+		D839EBA92821178C0018B030 /* ColorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlider.swift; sourceTree = "<group>"; };
+		D839EBAB282117C80018B030 /* SettingsViewForProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewForProfile.swift; sourceTree = "<group>"; };
+		D839EBAE28211DCA0018B030 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
+		D839EBB1282127650018B030 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Help.swift; path = Views/Help.swift; sourceTree = "<group>"; };
+		D839EBB328212B1F0018B030 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D839EBB528212CC10018B030 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		D839EBB728212D6D0018B030 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		D839EBBE28217CD50018B030 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Fungi Incognita/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D86B157F281D0711004A42DD /* Fungi Incognita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fungi Incognita.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86B1582281D0711004A42DD /* FungiIncognitaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungiIncognitaApp.swift; sourceTree = "<group>"; };
+		D86B1584281D0711004A42DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D86B1586281D0714004A42DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D86B1589281D0714004A42DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D86B1590281D154C004A42DD /* FungiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungiList.swift; sourceTree = "<group>"; };
+		D86B1594281D190D004A42DD /* FungiClassifierWithAugms.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FungiClassifierWithAugms.mlmodel; path = Classifier/FungiClassifierWithAugms.mlmodel; sourceTree = SOURCE_ROOT; };
+		D86B1596281D19E7004A42DD /* FungiShortInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungiShortInfo.swift; sourceTree = "<group>"; };
+		D86B1599281D203B004A42DD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D86B159C281D2178004A42DD /* SearchBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBlock.swift; path = Views/SearchBlock.swift; sourceTree = "<group>"; };
+		D883C3162821861700958E7C /* Fungi-Incognita-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fungi-Incognita-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D86B157C281D0711004A42DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7AC2221CED9D3B08B5DB1B /* Pods_Fungi_Incognita.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9947C6C6349E80A062682160 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				014C9780B7E56DDCD042AE69 /* Pods_Fungi_Incognita.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D839EB9E281D5A1D0018B030 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D839EB9F281D5A310018B030 /* ImageExtension.swift */,
+				D839EB90281D30A30018B030 /* Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D839EBA32821158B0018B030 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				D839EB8A281D28EF0018B030 /* ProfileView.swift */,
+				D839EBA42821161D0018B030 /* UserSettings.swift */,
+				D839EBA6282117160018B030 /* HeaderForProfile.swift */,
+				D839EBAB282117C80018B030 /* SettingsViewForProfile.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		D839EBA8282117780018B030 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D839EBA92821178C0018B030 /* ColorSlider.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D839EBAD28211DB30018B030 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				D839EBAE28211DCA0018B030 /* SettingsStore.swift */,
+				D839EB8C281D29170018B030 /* SettingsView.swift */,
+				D839EBB528212CC10018B030 /* Option.swift */,
+				D839EBB728212D6D0018B030 /* Settings.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		D86B1576281D0711004A42DD = {
+			isa = PBXGroup;
+			children = (
+				D839EBBE28217CD50018B030 /* GoogleService-Info.plist */,
+				D86B1581281D0711004A42DD /* Fungi Incognita */,
+				D86B1580281D0711004A42DD /* Products */,
+				F88368DA601E7897787A6489 /* Pods */,
+				9947C6C6349E80A062682160 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D86B1580281D0711004A42DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D86B157F281D0711004A42DD /* Fungi Incognita.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D86B1581281D0711004A42DD /* Fungi Incognita */ = {
+			isa = PBXGroup;
+			children = (
+				D883C3162821861700958E7C /* Fungi-Incognita-Info.plist */,
+				D839EBB328212B1F0018B030 /* Launch Screen.storyboard */,
+				D839EBA8282117780018B030 /* UI */,
+				D839EB9E281D5A1D0018B030 /* Extensions */,
+				D86B159B281D205E004A42DD /* CommonLets */,
+				D86B1598281D19EF004A42DD /* Cells */,
+				D86B1593281D18F8004A42DD /* Classifier */,
+				D86B1592281D18EC004A42DD /* Views */,
+				D86B1582281D0711004A42DD /* FungiIncognitaApp.swift */,
+				D86B1584281D0711004A42DD /* ContentView.swift */,
+				D86B1586281D0714004A42DD /* Assets.xcassets */,
+				D86B1588281D0714004A42DD /* Preview Content */,
+				D839EB92281D3F2A0018B030 /* TabBarButton.swift */,
+				D839EB98281D4FD10018B030 /* TabBarItem.swift */,
+				D839EB94281D40110018B030 /* TabBarShape.swift */,
+			);
+			path = "Fungi Incognita";
+			sourceTree = "<group>";
+		};
+		D86B1588281D0714004A42DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D86B1589281D0714004A42DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D86B1592281D18EC004A42DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D839EBAD28211DB30018B030 /* SettingsView */,
+				D839EBA32821158B0018B030 /* ProfileView */,
+				D839EBA1281D5A550018B030 /* PhotoPicker.swift */,
+				D86B1590281D154C004A42DD /* FungiList.swift */,
+				D86B159C281D2178004A42DD /* SearchBlock.swift */,
+				D839EB88281D28D60018B030 /* HomeView.swift */,
+				D839EB8E281D29840018B030 /* IdentificationView.swift */,
+				D839EBB1282127650018B030 /* Help.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D86B1593281D18F8004A42DD /* Classifier */ = {
+			isa = PBXGroup;
+			children = (
+				D839EB9B281D5A0F0018B030 /* Classifier.swift */,
+				D839EB9A281D5A0F0018B030 /* ImageClassifier.swift */,
+				D86B1594281D190D004A42DD /* FungiClassifierWithAugms.mlmodel */,
+			);
+			name = Classifier;
+			sourceTree = "<group>";
+		};
+		D86B1598281D19EF004A42DD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D86B1596281D19E7004A42DD /* FungiShortInfo.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D86B159B281D205E004A42DD /* CommonLets */ = {
+			isa = PBXGroup;
+			children = (
+				D86B1599281D203B004A42DD /* Colors.swift */,
+				D839EB96281D4D2E0018B030 /* Enums.swift */,
+			);
+			name = CommonLets;
+			sourceTree = "<group>";
+		};
+		F88368DA601E7897787A6489 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FD1BE59AC6DCB7723D9FE74 /* Pods-Fungi Incognita.debug.xcconfig */,
+				26576170BFFD7726410BEA1E /* Pods-Fungi Incognita.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D86B157E281D0711004A42DD /* Fungi Incognita */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D86B158D281D0714004A42DD /* Build configuration list for PBXNativeTarget "Fungi Incognita" */;
+			buildPhases = (
+				9846D38AF588A96B4B0EF164 /* [CP] Check Pods Manifest.lock */,
+				D86B157B281D0711004A42DD /* Sources */,
+				D86B157C281D0711004A42DD /* Frameworks */,
+				D86B157D281D0711004A42DD /* Resources */,
+				D839EBBC28216AF40018B030 /* Run SwiftLint */,
+				68AB7FF864E8AAC616C004CE /* [CP] Embed Pods Frameworks */,
+				D883C31528217FDD00958E7C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fungi Incognita";
+			productName = "Fungi incognita";
+			productReference = D86B157F281D0711004A42DD /* Fungi Incognita.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D86B1577281D0711004A42DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					D86B157E281D0711004A42DD = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D86B157A281D0711004A42DD /* Build configuration list for PBXProject "Fungi Incognita" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D86B1576281D0711004A42DD;
+			productRefGroup = D86B1580281D0711004A42DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D86B157E281D0711004A42DD /* Fungi Incognita */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D86B157D281D0711004A42DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D839EBB428212B1F0018B030 /* Launch Screen.storyboard in Resources */,
+				D839EBBF28217CD50018B030 /* GoogleService-Info.plist in Resources */,
+				D86B158A281D0714004A42DD /* Preview Assets.xcassets in Resources */,
+				D86B1587281D0714004A42DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68AB7FF864E8AAC616C004CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fungi Incognita/Pods-Fungi Incognita-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fungi Incognita/Pods-Fungi Incognita-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fungi Incognita/Pods-Fungi Incognita-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9846D38AF588A96B4B0EF164 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fungi Incognita-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D839EBBC28216AF40018B030 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SWIFT_LINT=/usr/local/bin/swiftlint\n\nif [[ -e \"${SWIFT_LINT}\" ]]; then\n    echo \"[I] Found SwiftLint at ${SWIFT_LINT}\"\nelse\n    echo \"[!] Local SwiftLint not found at ${SWIFT_LINT}\"\n    export SWIFT_LINT=${PWD}/Pods/SwiftLint/swiftlint\n    echo \"[I] Try to using SwiftLint from cocoapods at ${SWIFT_LINT}\"\nfi\n\nif [[ ! -e \"${SWIFT_LINT}\" ]]; then\n    echo \"[!] SwifLint is not installed.\"\n    echo \"[!] Expected location is '${SWIFT_LINT}'\"\n    echo \"[!] Please install it. eg. 'brew install swiftlint'\"\n    exit 1\nfi\n\necho \"[I] SwiftLint version: $(${SWIFT_LINT} version)\"\n\ngit ls-files --other --modified --exclude-standard -- \"*.swift\" | while read filename; do\n    $SWIFT_LINT lint --path \"$filename\";\n    $SWIFT_LINT autocorrect --path \"$filename\";\ndone\n";
+		};
+		D883C31528217FDD00958E7C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D86B157B281D0711004A42DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D839EB89281D28D60018B030 /* HomeView.swift in Sources */,
+				D839EBA0281D5A310018B030 /* ImageExtension.swift in Sources */,
+				D86B1591281D154C004A42DD /* FungiList.swift in Sources */,
+				D839EB95281D40110018B030 /* TabBarShape.swift in Sources */,
+				D839EBA7282117160018B030 /* HeaderForProfile.swift in Sources */,
+				D839EB8B281D28EF0018B030 /* ProfileView.swift in Sources */,
+				D86B159D281D2178004A42DD /* SearchBlock.swift in Sources */,
+				D839EBAA2821178C0018B030 /* ColorSlider.swift in Sources */,
+				D86B159A281D203B004A42DD /* Colors.swift in Sources */,
+				D86B1585281D0711004A42DD /* ContentView.swift in Sources */,
+				D839EBA2281D5A550018B030 /* PhotoPicker.swift in Sources */,
+				D839EB99281D4FD10018B030 /* TabBarItem.swift in Sources */,
+				D86B1597281D19E7004A42DD /* FungiShortInfo.swift in Sources */,
+				D839EB91281D30A30018B030 /* Extensions.swift in Sources */,
+				D839EB9D281D5A0F0018B030 /* Classifier.swift in Sources */,
+				D839EB8F281D29840018B030 /* IdentificationView.swift in Sources */,
+				D86B1595281D190D004A42DD /* FungiClassifierWithAugms.mlmodel in Sources */,
+				D839EB93281D3F2A0018B030 /* TabBarButton.swift in Sources */,
+				D839EBB828212D6D0018B030 /* Settings.swift in Sources */,
+				D839EBAF28211DCA0018B030 /* SettingsStore.swift in Sources */,
+				D86B1583281D0711004A42DD /* FungiIncognitaApp.swift in Sources */,
+				D839EBAC282117C80018B030 /* SettingsViewForProfile.swift in Sources */,
+				D839EBA52821161D0018B030 /* UserSettings.swift in Sources */,
+				D839EBB2282127650018B030 /* Help.swift in Sources */,
+				D839EB9C281D5A0F0018B030 /* ImageClassifier.swift in Sources */,
+				D839EB97281D4D2E0018B030 /* Enums.swift in Sources */,
+				D839EBB628212CC10018B030 /* Option.swift in Sources */,
+				D839EB8D281D29170018B030 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D86B158B281D0714004A42DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D86B158C281D0714004A42DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D86B158E281D0714004A42DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD1BE59AC6DCB7723D9FE74 /* Pods-Fungi Incognita.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"Fungi incognita/Preview Content\"";
+				DEVELOPMENT_TEAM = 6RF64JAM9R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fungi-Incognita-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.natalykn.FungiIncognita;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D86B158F281D0714004A42DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26576170BFFD7726410BEA1E /* Pods-Fungi Incognita.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fungi incognita/Preview Content\"";
+				DEVELOPMENT_TEAM = 6RF64JAM9R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fungi-Incognita-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.natalykn.FungiIncognita;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D86B157A281D0711004A42DD /* Build configuration list for PBXProject "Fungi Incognita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86B158B281D0714004A42DD /* Debug */,
+				D86B158C281D0714004A42DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D86B158D281D0714004A42DD /* Build configuration list for PBXNativeTarget "Fungi Incognita" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86B158E281D0714004A42DD /* Debug */,
+				D86B158F281D0714004A42DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D86B1577281D0711004A42DD /* Project object */;
+}
