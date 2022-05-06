@@ -30,6 +30,19 @@
 		D839EBB628212CC10018B030 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBB528212CC10018B030 /* Option.swift */; };
 		D839EBB828212D6D0018B030 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBB728212D6D0018B030 /* Settings.swift */; };
 		D839EBBF28217CD50018B030 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D839EBBE28217CD50018B030 /* GoogleService-Info.plist */; };
+		D85D8D7C28257BDF00AE076B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D7B28257BDF00AE076B /* FirebaseAnalytics */; };
+		D85D8D7E28257BDF00AE076B /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D7D28257BDF00AE076B /* FirebaseAnalyticsSwift */; };
+		D85D8D8028257BDF00AE076B /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D7F28257BDF00AE076B /* FirebaseAppCheck */; };
+		D85D8D8228257BDF00AE076B /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D8128257BDF00AE076B /* FirebaseAppDistribution-Beta */; };
+		D85D8D8428257BDF00AE076B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D8328257BDF00AE076B /* FirebaseAuth */; };
+		D85D8D8628257BDF00AE076B /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D8528257BDF00AE076B /* FirebaseAuthCombine-Community */; };
+		D85D8D8828257BDF00AE076B /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D8728257BDF00AE076B /* FirebaseCrashlytics */; };
+		D85D8D8A28257BDF00AE076B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D8928257BDF00AE076B /* FirebaseFirestore */; };
+		D85D8D8C28257BDF00AE076B /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D8B28257BDF00AE076B /* FirebaseFirestoreCombine-Community */; };
+		D85D8D8E28257BDF00AE076B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D8D28257BDF00AE076B /* FirebaseFirestoreSwift */; };
+		D85D8D9028257BDF00AE076B /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D8F28257BDF00AE076B /* FirebasePerformance */; };
+		D85D8D9228257BDF00AE076B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D9128257BDF00AE076B /* FirebaseStorage */; };
+		D85D8D9428257BDF00AE076B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D9328257BDF00AE076B /* FirebaseStorageCombine-Community */; };
 		D86B1583281D0711004A42DD /* FungiIncognitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1582281D0711004A42DD /* FungiIncognitaApp.swift */; };
 		D86B1585281D0711004A42DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1584281D0711004A42DD /* ContentView.swift */; };
 		D86B1587281D0714004A42DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86B1586281D0714004A42DD /* Assets.xcassets */; };
@@ -39,13 +52,14 @@
 		D86B1597281D19E7004A42DD /* FungiShortInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1596281D19E7004A42DD /* FungiShortInfo.swift */; };
 		D86B159A281D203B004A42DD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1599281D203B004A42DD /* Colors.swift */; };
 		D86B159D281D2178004A42DD /* SearchBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B159C281D2178004A42DD /* SearchBlock.swift */; };
-		EF7AC2221CED9D3B08B5DB1B /* Pods_Fungi_Incognita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014C9780B7E56DDCD042AE69 /* Pods_Fungi_Incognita.framework */; };
+		D883C3182821990C00958E7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D883C3172821990C00958E7C /* Localizable.strings */; };
+		D883C33B2822D97E00958E7C /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C33A2822D97E00958E7C /* AuthenticationService.swift */; };
+		D883C33D2822DA2600958E7C /* FungiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C33C2822DA2600958E7C /* FungiRepository.swift */; };
+		D883C3432822DD0400958E7C /* Fungi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C3422822DD0400958E7C /* Fungi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		014C9780B7E56DDCD042AE69 /* Pods_Fungi_Incognita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fungi_Incognita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26576170BFFD7726410BEA1E /* Pods-Fungi Incognita.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fungi Incognita.release.xcconfig"; path = "Target Support Files/Pods-Fungi Incognita/Pods-Fungi Incognita.release.xcconfig"; sourceTree = "<group>"; };
-		7FD1BE59AC6DCB7723D9FE74 /* Pods-Fungi Incognita.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fungi Incognita.debug.xcconfig"; path = "Target Support Files/Pods-Fungi Incognita/Pods-Fungi Incognita.debug.xcconfig"; sourceTree = "<group>"; };
 		D839EB88281D28D60018B030 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Views/HomeView.swift; sourceTree = "<group>"; };
 		D839EB8A281D28EF0018B030 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D839EB8C281D29170018B030 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -80,6 +94,10 @@
 		D86B1599281D203B004A42DD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D86B159C281D2178004A42DD /* SearchBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBlock.swift; path = Views/SearchBlock.swift; sourceTree = "<group>"; };
 		D883C3162821861700958E7C /* Fungi-Incognita-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fungi-Incognita-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D883C3172821990C00958E7C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		D883C33A2822D97E00958E7C /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		D883C33C2822DA2600958E7C /* FungiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungiRepository.swift; sourceTree = "<group>"; };
+		D883C3422822DD0400958E7C /* Fungi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fungi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +105,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF7AC2221CED9D3B08B5DB1B /* Pods_Fungi_Incognita.framework in Frameworks */,
+				D85D8D9028257BDF00AE076B /* FirebasePerformance in Frameworks */,
+				D85D8D7E28257BDF00AE076B /* FirebaseAnalyticsSwift in Frameworks */,
+				D85D8D8628257BDF00AE076B /* FirebaseAuthCombine-Community in Frameworks */,
+				D85D8D9428257BDF00AE076B /* FirebaseStorageCombine-Community in Frameworks */,
+				D85D8D8428257BDF00AE076B /* FirebaseAuth in Frameworks */,
+				D85D8D8C28257BDF00AE076B /* FirebaseFirestoreCombine-Community in Frameworks */,
+				D85D8D9228257BDF00AE076B /* FirebaseStorage in Frameworks */,
+				D85D8D8828257BDF00AE076B /* FirebaseCrashlytics in Frameworks */,
+				D85D8D8E28257BDF00AE076B /* FirebaseFirestoreSwift in Frameworks */,
+				D85D8D8028257BDF00AE076B /* FirebaseAppCheck in Frameworks */,
+				D85D8D8A28257BDF00AE076B /* FirebaseFirestore in Frameworks */,
+				D85D8D7C28257BDF00AE076B /* FirebaseAnalytics in Frameworks */,
+				D85D8D8228257BDF00AE076B /* FirebaseAppDistribution-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +177,6 @@
 				D839EBBE28217CD50018B030 /* GoogleService-Info.plist */,
 				D86B1581281D0711004A42DD /* Fungi Incognita */,
 				D86B1580281D0711004A42DD /* Products */,
-				F88368DA601E7897787A6489 /* Pods */,
 				9947C6C6349E80A062682160 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -165,6 +194,9 @@
 			children = (
 				D883C3162821861700958E7C /* Fungi-Incognita-Info.plist */,
 				D839EBB328212B1F0018B030 /* Launch Screen.storyboard */,
+				D883C3392822D8F700958E7C /* Models */,
+				D883C3382822D8F700958E7C /* Repositories */,
+				D883C3362822D8F600958E7C /* Services */,
 				D839EBA8282117780018B030 /* UI */,
 				D839EB9E281D5A1D0018B030 /* Extensions */,
 				D86B159B281D205E004A42DD /* CommonLets */,
@@ -178,6 +210,7 @@
 				D839EB92281D3F2A0018B030 /* TabBarButton.swift */,
 				D839EB98281D4FD10018B030 /* TabBarItem.swift */,
 				D839EB94281D40110018B030 /* TabBarShape.swift */,
+				D883C3172821990C00958E7C /* Localizable.strings */,
 			);
 			path = "Fungi Incognita";
 			sourceTree = "<group>";
@@ -232,13 +265,28 @@
 			name = CommonLets;
 			sourceTree = "<group>";
 		};
-		F88368DA601E7897787A6489 /* Pods */ = {
+		D883C3362822D8F600958E7C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				7FD1BE59AC6DCB7723D9FE74 /* Pods-Fungi Incognita.debug.xcconfig */,
-				26576170BFFD7726410BEA1E /* Pods-Fungi Incognita.release.xcconfig */,
+				D883C33A2822D97E00958E7C /* AuthenticationService.swift */,
 			);
-			path = Pods;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D883C3382822D8F700958E7C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D883C33C2822DA2600958E7C /* FungiRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D883C3392822D8F700958E7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D883C3422822DD0400958E7C /* Fungi.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,19 +296,31 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D86B158D281D0714004A42DD /* Build configuration list for PBXNativeTarget "Fungi Incognita" */;
 			buildPhases = (
-				9846D38AF588A96B4B0EF164 /* [CP] Check Pods Manifest.lock */,
 				D86B157B281D0711004A42DD /* Sources */,
 				D86B157C281D0711004A42DD /* Frameworks */,
 				D86B157D281D0711004A42DD /* Resources */,
 				D839EBBC28216AF40018B030 /* Run SwiftLint */,
-				68AB7FF864E8AAC616C004CE /* [CP] Embed Pods Frameworks */,
-				D883C31528217FDD00958E7C /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Fungi Incognita";
+			packageProductDependencies = (
+				D85D8D7B28257BDF00AE076B /* FirebaseAnalytics */,
+				D85D8D7D28257BDF00AE076B /* FirebaseAnalyticsSwift */,
+				D85D8D7F28257BDF00AE076B /* FirebaseAppCheck */,
+				D85D8D8128257BDF00AE076B /* FirebaseAppDistribution-Beta */,
+				D85D8D8328257BDF00AE076B /* FirebaseAuth */,
+				D85D8D8528257BDF00AE076B /* FirebaseAuthCombine-Community */,
+				D85D8D8728257BDF00AE076B /* FirebaseCrashlytics */,
+				D85D8D8928257BDF00AE076B /* FirebaseFirestore */,
+				D85D8D8B28257BDF00AE076B /* FirebaseFirestoreCombine-Community */,
+				D85D8D8D28257BDF00AE076B /* FirebaseFirestoreSwift */,
+				D85D8D8F28257BDF00AE076B /* FirebasePerformance */,
+				D85D8D9128257BDF00AE076B /* FirebaseStorage */,
+				D85D8D9328257BDF00AE076B /* FirebaseStorageCombine-Community */,
+			);
 			productName = "Fungi incognita";
 			productReference = D86B157F281D0711004A42DD /* Fungi Incognita.app */;
 			productType = "com.apple.product-type.application";
@@ -289,6 +349,9 @@
 				Base,
 			);
 			mainGroup = D86B1576281D0711004A42DD;
+			packageReferences = (
+				D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D86B1580281D0711004A42DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -303,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D883C3182821990C00958E7C /* Localizable.strings in Resources */,
 				D839EBB428212B1F0018B030 /* Launch Screen.storyboard in Resources */,
 				D839EBBF28217CD50018B030 /* GoogleService-Info.plist in Resources */,
 				D86B158A281D0714004A42DD /* Preview Assets.xcassets in Resources */,
@@ -313,45 +377,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		68AB7FF864E8AAC616C004CE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fungi Incognita/Pods-Fungi Incognita-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fungi Incognita/Pods-Fungi Incognita-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fungi Incognita/Pods-Fungi Incognita-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9846D38AF588A96B4B0EF164 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Fungi Incognita-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D839EBBC28216AF40018B030 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,25 +394,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "SWIFT_LINT=/usr/local/bin/swiftlint\n\nif [[ -e \"${SWIFT_LINT}\" ]]; then\n    echo \"[I] Found SwiftLint at ${SWIFT_LINT}\"\nelse\n    echo \"[!] Local SwiftLint not found at ${SWIFT_LINT}\"\n    export SWIFT_LINT=${PWD}/Pods/SwiftLint/swiftlint\n    echo \"[I] Try to using SwiftLint from cocoapods at ${SWIFT_LINT}\"\nfi\n\nif [[ ! -e \"${SWIFT_LINT}\" ]]; then\n    echo \"[!] SwifLint is not installed.\"\n    echo \"[!] Expected location is '${SWIFT_LINT}'\"\n    echo \"[!] Please install it. eg. 'brew install swiftlint'\"\n    exit 1\nfi\n\necho \"[I] SwiftLint version: $(${SWIFT_LINT} version)\"\n\ngit ls-files --other --modified --exclude-standard -- \"*.swift\" | while read filename; do\n    $SWIFT_LINT lint --path \"$filename\";\n    $SWIFT_LINT autocorrect --path \"$filename\";\ndone\n";
-		};
-		D883C31528217FDD00958E7C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
-				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -411,11 +417,14 @@
 				D86B1597281D19E7004A42DD /* FungiShortInfo.swift in Sources */,
 				D839EB91281D30A30018B030 /* Extensions.swift in Sources */,
 				D839EB9D281D5A0F0018B030 /* Classifier.swift in Sources */,
+				D883C33D2822DA2600958E7C /* FungiRepository.swift in Sources */,
 				D839EB8F281D29840018B030 /* IdentificationView.swift in Sources */,
+				D883C33B2822D97E00958E7C /* AuthenticationService.swift in Sources */,
 				D86B1595281D190D004A42DD /* FungiClassifierWithAugms.mlmodel in Sources */,
 				D839EB93281D3F2A0018B030 /* TabBarButton.swift in Sources */,
 				D839EBB828212D6D0018B030 /* Settings.swift in Sources */,
 				D839EBAF28211DCA0018B030 /* SettingsStore.swift in Sources */,
+				D883C3432822DD0400958E7C /* Fungi.swift in Sources */,
 				D86B1583281D0711004A42DD /* FungiIncognitaApp.swift in Sources */,
 				D839EBAC282117C80018B030 /* SettingsViewForProfile.swift in Sources */,
 				D839EBA52821161D0018B030 /* UserSettings.swift in Sources */,
@@ -546,7 +555,6 @@
 		};
 		D86B158E281D0714004A42DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FD1BE59AC6DCB7723D9FE74 /* Pods-Fungi Incognita.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -580,7 +588,6 @@
 		};
 		D86B158F281D0714004A42DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26576170BFFD7726410BEA1E /* Pods-Fungi Incognita.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -633,6 +640,85 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D85D8D7B28257BDF00AE076B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D85D8D7D28257BDF00AE076B /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		D85D8D7F28257BDF00AE076B /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		D85D8D8128257BDF00AE076B /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		D85D8D8328257BDF00AE076B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D85D8D8528257BDF00AE076B /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		D85D8D8728257BDF00AE076B /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		D85D8D8928257BDF00AE076B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D85D8D8B28257BDF00AE076B /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		D85D8D8D28257BDF00AE076B /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		D85D8D8F28257BDF00AE076B /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		D85D8D9128257BDF00AE076B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		D85D8D9328257BDF00AE076B /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D86B1577281D0711004A42DD /* Project object */;
 }

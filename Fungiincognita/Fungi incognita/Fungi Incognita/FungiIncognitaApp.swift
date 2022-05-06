@@ -7,17 +7,22 @@
 
 import SwiftUI
 import Firebase
+import FirebaseAppCheck
 
 @main
 struct FungiIncognitaApp: App {
+    @StateObject var fungiRepository = FungiRepository()
 
     init() {
-     FirebaseApp.configure()
+        let providerFactory = AppCheckDebugProviderFactory()
+        AppCheck.setAppCheckProviderFactory(providerFactory)
+        FirebaseApp.configure()
+        AuthenticationService.signIn()
     }
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(fungiRepository)
         }
     }
 }

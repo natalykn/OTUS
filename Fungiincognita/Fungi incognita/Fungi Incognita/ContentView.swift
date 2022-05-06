@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var selectedTabBar = TabImems.home
     @State public var xOffSet: CGFloat = 0
     @ObservedObject var settings: SettingsStore = SettingsStore()
+    @EnvironmentObject var fungiRepository: FungiRepository
 
     init() { UITabBar.appearance().isHidden = true }
 
@@ -22,7 +23,7 @@ struct ContentView: View {
             TabView(selection: $selectedTabBar) {
                 switch selectedTabBar {
                 case .home:
-                    HomeView()
+                    HomeView().environmentObject(fungiRepository)
                 case .favList:
                     FungiList()
                 case .identificationFungi:

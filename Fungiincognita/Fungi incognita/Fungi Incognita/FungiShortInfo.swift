@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FungiShortInfo: View {
+    var fungi: Fungi
+
     var body: some View {
         ZStack(alignment: .top) {
             ZStack(alignment: .trailing) {
@@ -27,10 +29,10 @@ struct FungiShortInfo: View {
                         .clipped()
                         .padding(.trailing, 10)
                     VStack(alignment: .leading) {
-                        Text("Mushroom name")
+                        Text(fungi.name)
                             .font(.title2)
                             .foregroundColor(Color(.systemGray5))
-                        Text("Mushroom short description")
+                        Text(fungi.description)
                             .font(.body)
                             .foregroundColor(Color(.systemGray5))
                     }

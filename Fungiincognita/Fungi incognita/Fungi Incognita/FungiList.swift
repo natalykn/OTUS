@@ -12,7 +12,7 @@ struct FungiList: View {
     var body: some View {
         VStack {
             SearchBlock()
-            FungiShortInfo()
+           // FungiShortInfo()
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .background(mainColors2)

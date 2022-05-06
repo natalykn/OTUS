@@ -8,27 +8,39 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var fungiRepository: FungiRepository
+    @State private var searchText = ""
+    
     var body: some View {
-        VStack {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-      /*  Button(
-            action: {
-                let numbers = [0]
-                _ = numbers[1]
-
-            },
-            label: {
-                Text("Done")
+        NavigationView {
+            List {
+                ForEach(searchResults, id: \.self) { fungi in
+                    FungiShortInfo(fungi: fungi)
+                        .padding([.leading, .trailing])
+                }                .listRowBackground(mainColors1)
+                
             }
-        )*/
-        VStack {}
-            .frame(height: 80)
+            .searchable(text: $searchText) {
+                ForEach(searchResults, id: \.self) { result in
+                    Text("Are you looking for \(result.name)?").searchCompletion(result.name)
+                }
+            }
+            .navigationTitle("Fungies")
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-        .background(mainColors1)
+        .padding(.bottom, 80)
+        
         .edgesIgnoringSafeArea(.all)
-
     }
+    
+    var searchResults: [Fungi] {
+        if searchText.isEmpty {
+            return fungiRepository.fungies
+        } else {
+            return fungiRepository.fungies.filter { $0.name.contains(searchText) }
+        }
+    }
+    
 }
 
 struct HomeView_Previews: PreviewProvider {
