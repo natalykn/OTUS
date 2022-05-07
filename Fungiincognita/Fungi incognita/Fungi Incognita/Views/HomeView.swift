@@ -10,15 +10,15 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var fungiRepository: FungiRepository
     @State private var searchText = ""
-    
+
     var body: some View {
         NavigationView {
             List {
                 ForEach(searchResults, id: \.self) { fungi in
                     FungiShortInfo(fungi: fungi)
-                        .padding([.leading, .trailing])
+                        .listRowSeparator(.hidden)
                 }                .listRowBackground(mainColors1)
-                
+
             }
             .searchable(text: $searchText) {
                 ForEach(searchResults, id: \.self) { result in
@@ -29,10 +29,10 @@ struct HomeView: View {
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .padding(.bottom, 80)
-        
+
         .edgesIgnoringSafeArea(.all)
     }
-    
+
     var searchResults: [Fungi] {
         if searchText.isEmpty {
             return fungiRepository.fungies
@@ -40,7 +40,7 @@ struct HomeView: View {
             return fungiRepository.fungies.filter { $0.name.contains(searchText) }
         }
     }
-    
+
 }
 
 struct HomeView_Previews: PreviewProvider {

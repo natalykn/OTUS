@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseStorage
 
 struct FungiShortInfo: View {
     var fungi: Fungi
+    @State private var imageURL = URL(string: "")
 
+    @State private var showSafari: Bool = false
+    @State private var isFav: Bool = false
     var body: some View {
         ZStack(alignment: .top) {
             ZStack(alignment: .trailing) {
@@ -20,14 +24,13 @@ struct FungiShortInfo: View {
                     .padding(.horizontal, 26)
                     .padding(.vertical)
                     .shadow(color: Color.black.opacity(0.25), radius: 8, x: 0, y: 10)
+                    .onAppear(perform: loadImageFromFirebase)
                 HStack(alignment: .top) {
-                    Image("myImage")
-                        .renderingMode(.original)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 80, height: 92)
-                        .clipped()
-                        .padding(.trailing, 10)
+                    FungiImage(name: fungi.name, urlForImage: imageURL)
+                        .frame(width: 92, height: 92)
+                        .cornerRadius(10)
+                        .overlay(RoundedRectangle(cornerRadius: 10))
+                        .foregroundColor(Color.clear)
                     VStack(alignment: .leading) {
                         Text(fungi.name)
                             .font(.title2)
@@ -43,13 +46,34 @@ struct FungiShortInfo: View {
                 .padding(.horizontal, 36)
                 Image(systemName: "bookmark.fill")
                     .imageScale(.large)
-                    .foregroundColor(Color.pink)
+                    .foregroundColor(isFav ? .pink : .gray.opacity(0.1))
                     .font(.title2)
                     .offset(x: -30, y: -46)
+                    .onTapGesture {
+                        isFav.toggle()
+                    }
             }
         }
-        .frame(minWidth: 0, minHeight: 172)
+        .frame(minWidth: 0, minHeight: 132)
         .clipped()
         .padding(.top, 0)
+        .onTapGesture {
+            showSafari.toggle()
+        }
+        .fullScreenCover(isPresented: $showSafari, content: {
+            SFSafariViewWrapper(url: URL(string: fungi.link ?? "https://www.wikipedia.org")!)
+        })
+
+    }
+
+    func loadImageFromFirebase() {
+        let path = "/images/" + fungi.name + ".jpg"
+        imageUrlFromFirebase(from: path) { url, error in
+            if error != nil {
+                print((error?.localizedDescription)!)
+                return
+            }
+            self.imageURL = url!
+        }
     }
 }

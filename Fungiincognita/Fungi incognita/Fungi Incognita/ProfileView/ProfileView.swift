@@ -23,7 +23,7 @@ struct ProfileView: View {
             RoundedRectangle(cornerRadius: 11, style: .continuous)
                 .frame(height: 46)
                 .clipped()
-                .foregroundColor(Color(.secondarySystemFill))
+                .foregroundColor(Color(.secondarySystemFill).opacity(0.5))
                 .overlay(HStack {
                     Image(systemName: "pencil")
                     Text("Edit")

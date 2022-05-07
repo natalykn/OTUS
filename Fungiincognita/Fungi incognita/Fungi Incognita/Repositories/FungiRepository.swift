@@ -47,6 +47,9 @@ class FungiRepository: ObservableObject {
                 self.fungies = querySnapshot?.documents.compactMap { document in
                     return try? document.data(as: Fungi.self)
                 } ?? []
+                self.fungies.sort {
+                    $0.name < $1.name
+                }
             }
     }
 }

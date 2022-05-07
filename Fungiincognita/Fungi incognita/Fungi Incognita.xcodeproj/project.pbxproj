@@ -43,6 +43,10 @@
 		D85D8D9028257BDF00AE076B /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D8F28257BDF00AE076B /* FirebasePerformance */; };
 		D85D8D9228257BDF00AE076B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D9128257BDF00AE076B /* FirebaseStorage */; };
 		D85D8D9428257BDF00AE076B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D9328257BDF00AE076B /* FirebaseStorageCombine-Community */; };
+		D85F1BD1282685F90008DA21 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D85F1BD0282685F90008DA21 /* SDWebImageSwiftUI */; };
+		D85F1BD4282687D20008DA21 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F1BD3282687D20008DA21 /* Helpers.swift */; };
+		D85F1BD6282695810008DA21 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F1BD5282695810008DA21 /* SFSafariViewWrapper.swift */; };
+		D85F1BD82826AA160008DA21 /* FungiImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F1BD72826AA160008DA21 /* FungiImage.swift */; };
 		D86B1583281D0711004A42DD /* FungiIncognitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1582281D0711004A42DD /* FungiIncognitaApp.swift */; };
 		D86B1585281D0711004A42DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1584281D0711004A42DD /* ContentView.swift */; };
 		D86B1587281D0714004A42DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86B1586281D0714004A42DD /* Assets.xcassets */; };
@@ -83,6 +87,9 @@
 		D839EBB528212CC10018B030 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		D839EBB728212D6D0018B030 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		D839EBBE28217CD50018B030 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Fungi Incognita/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D85F1BD3282687D20008DA21 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		D85F1BD5282695810008DA21 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFSafariViewWrapper.swift; path = Extensions/SFSafariViewWrapper.swift; sourceTree = "<group>"; };
+		D85F1BD72826AA160008DA21 /* FungiImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungiImage.swift; sourceTree = "<group>"; };
 		D86B157F281D0711004A42DD /* Fungi Incognita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fungi Incognita.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86B1582281D0711004A42DD /* FungiIncognitaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungiIncognitaApp.swift; sourceTree = "<group>"; };
 		D86B1584281D0711004A42DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85F1BD1282685F90008DA21 /* SDWebImageSwiftUI in Frameworks */,
 				D85D8D9028257BDF00AE076B /* FirebasePerformance in Frameworks */,
 				D85D8D7E28257BDF00AE076B /* FirebaseAnalyticsSwift in Frameworks */,
 				D85D8D8628257BDF00AE076B /* FirebaseAuthCombine-Community in Frameworks */,
@@ -137,6 +145,7 @@
 			children = (
 				D839EB9F281D5A310018B030 /* ImageExtension.swift */,
 				D839EB90281D30A30018B030 /* Extensions.swift */,
+				D85F1BD5282695810008DA21 /* SFSafariViewWrapper.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -156,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				D839EBA92821178C0018B030 /* ColorSlider.swift */,
+				D85F1BD72826AA160008DA21 /* FungiImage.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -169,6 +179,14 @@
 				D839EBB728212D6D0018B030 /* Settings.swift */,
 			);
 			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		D85F1BD2282687A90008DA21 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D85F1BD3282687D20008DA21 /* Helpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		D86B1576281D0711004A42DD = {
@@ -192,6 +210,7 @@
 		D86B1581281D0711004A42DD /* Fungi Incognita */ = {
 			isa = PBXGroup;
 			children = (
+				D85F1BD2282687A90008DA21 /* Helpers */,
 				D883C3162821861700958E7C /* Fungi-Incognita-Info.plist */,
 				D839EBB328212B1F0018B030 /* Launch Screen.storyboard */,
 				D883C3392822D8F700958E7C /* Models */,
@@ -320,6 +339,7 @@
 				D85D8D8F28257BDF00AE076B /* FirebasePerformance */,
 				D85D8D9128257BDF00AE076B /* FirebaseStorage */,
 				D85D8D9328257BDF00AE076B /* FirebaseStorageCombine-Community */,
+				D85F1BD0282685F90008DA21 /* SDWebImageSwiftUI */,
 			);
 			productName = "Fungi incognita";
 			productReference = D86B157F281D0711004A42DD /* Fungi Incognita.app */;
@@ -351,6 +371,7 @@
 			mainGroup = D86B1576281D0711004A42DD;
 			packageReferences = (
 				D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D85F1BCF282685F80008DA21 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = D86B1580281D0711004A42DD /* Products */;
 			projectDirPath = "";
@@ -427,11 +448,14 @@
 				D883C3432822DD0400958E7C /* Fungi.swift in Sources */,
 				D86B1583281D0711004A42DD /* FungiIncognitaApp.swift in Sources */,
 				D839EBAC282117C80018B030 /* SettingsViewForProfile.swift in Sources */,
+				D85F1BD82826AA160008DA21 /* FungiImage.swift in Sources */,
 				D839EBA52821161D0018B030 /* UserSettings.swift in Sources */,
 				D839EBB2282127650018B030 /* Help.swift in Sources */,
+				D85F1BD4282687D20008DA21 /* Helpers.swift in Sources */,
 				D839EB9C281D5A0F0018B030 /* ImageClassifier.swift in Sources */,
 				D839EB97281D4D2E0018B030 /* Enums.swift in Sources */,
 				D839EBB628212CC10018B030 /* Option.swift in Sources */,
+				D85F1BD6282695810008DA21 /* SFSafariViewWrapper.swift in Sources */,
 				D839EB8D281D29170018B030 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,6 +674,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		D85F1BCF282685F80008DA21 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -717,6 +749,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D85D8D7A28257BDF00AE076B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		D85F1BD0282685F90008DA21 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85F1BCF282685F80008DA21 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

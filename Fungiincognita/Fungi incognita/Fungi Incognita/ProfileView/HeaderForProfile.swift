@@ -28,7 +28,9 @@ struct HeaderForProfile: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 case .failure:
-                    Image(systemName: "photo")
+                    Image("profile")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
                 @unknown default:
                     EmptyView()
                 }
