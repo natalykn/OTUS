@@ -31,3 +31,7 @@ func verifyUrl (url: URL?) -> Bool {
     }
     return false
 }
+
+func getStrings(data: Data) -> [String] {
+    return StorageUserDefaults.loadStringArray(data: data)
+}

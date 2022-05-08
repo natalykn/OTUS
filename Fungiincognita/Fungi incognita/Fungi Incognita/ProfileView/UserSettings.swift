@@ -11,13 +11,12 @@ import Foundation
 
 enum DefaultSettings {
     // Color Slider Values
-    static var rValue: Double = 150.0
-    static var gValue: Double = 150.0
-    static var bValue: Double = 150.0
+    static var rValue: Double = 41.0
+    static var gValue: Double = 152.0
+    static var bValue: Double = 116.0
 
     // Profile
     static var name: String = "Name"
-    static var subtitle: String = "User"
     static var description: String = """
 What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -30,6 +29,8 @@ and more recently with desktop publishing
 software like Aldus PageMaker including versions of Lorem Ipsum.
 """
     static var profileUrl: URL = URL(fileURLWithPath: "")
+
+    static var favorites: [String] = []
 
 }
 

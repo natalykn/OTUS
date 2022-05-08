@@ -10,7 +10,6 @@ import UIKit
 
 struct ProfileView: View {
     @State var isPresented = false
-    @EnvironmentObject var settings: SettingsStore
 
     var body: some View {
         VStack {
@@ -29,7 +28,7 @@ struct ProfileView: View {
                     Text("Edit")
                         .font(.title2)
                 }
-                    .foregroundColor(Color(.systemCyan)), alignment: .center)
+                    .foregroundColor(mainColors), alignment: .center)
                 .padding()
                 .onTapGesture {
                     self.isPresented = true                    }
@@ -47,7 +46,6 @@ struct ProfileView: View {
 
 struct ProfileText: View {
     @AppStorage("name") var name = DefaultSettings.name
-    @AppStorage("subtitle") var subtitle = DefaultSettings.subtitle
     @AppStorage("description") var description = DefaultSettings.description
 
     var body: some View {
@@ -56,12 +54,12 @@ struct ProfileText: View {
                 Text(name)
                     .bold()
                     .font(.title)
-                    .foregroundColor(Color(.systemCyan))
+                    .foregroundColor(mainColors)
             }.padding()
             ScrollView {
                 Text(description)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color(.systemCyan))
+                    .foregroundColor(mainColors)
                     .padding()
             }
             Spacer()

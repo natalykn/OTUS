@@ -14,6 +14,8 @@ struct FungiShortInfo: View {
 
     @State private var showSafari: Bool = false
     @State private var isFav: Bool = false
+    @EnvironmentObject var fungiRepository: FungiRepository
+
     var body: some View {
         ZStack(alignment: .top) {
             ZStack(alignment: .trailing) {
@@ -24,7 +26,10 @@ struct FungiShortInfo: View {
                     .padding(.horizontal, 26)
                     .padding(.vertical)
                     .shadow(color: Color.black.opacity(0.25), radius: 8, x: 0, y: 10)
-                    .onAppear(perform: loadImageFromFirebase)
+                    .onAppear {
+                        loadImageFromFirebase()
+                        isFav = fungiRepository.isFavoritesFungi(idFungi: fungi.id)
+                    }
                 HStack(alignment: .top) {
                     FungiImage(name: fungi.name, urlForImage: imageURL)
                         .frame(width: 92, height: 92)
@@ -34,10 +39,10 @@ struct FungiShortInfo: View {
                     VStack(alignment: .leading) {
                         Text(fungi.name)
                             .font(.title2)
-                            .foregroundColor(Color(.systemGray5))
+                            .foregroundColor(Color.gray)
                         Text(fungi.description)
                             .font(.body)
-                            .foregroundColor(Color(.systemGray5))
+                            .foregroundColor(Color.gray)
                     }
                     Spacer()
                 }
@@ -51,6 +56,11 @@ struct FungiShortInfo: View {
                     .offset(x: -30, y: -46)
                     .onTapGesture {
                         isFav.toggle()
+                        if isFav == true {
+                            fungiRepository.addFungiToFavorites(idFungi: fungi.id)
+                        } else {
+                            fungiRepository.removeFungiToFavorites(idFungi: fungi.id)
+                        }
                     }
             }
         }

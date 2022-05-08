@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D839EB89281D28D60018B030 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB88281D28D60018B030 /* HomeView.swift */; };
+		D839EB89281D28D60018B030 /* FungiesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB88281D28D60018B030 /* FungiesList.swift */; };
 		D839EB8B281D28EF0018B030 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB8A281D28EF0018B030 /* ProfileView.swift */; };
-		D839EB8D281D29170018B030 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB8C281D29170018B030 /* SettingsView.swift */; };
+		D839EB8D281D29170018B030 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB8C281D29170018B030 /* InfoView.swift */; };
 		D839EB8F281D29840018B030 /* IdentificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB8E281D29840018B030 /* IdentificationView.swift */; };
 		D839EB91281D30A30018B030 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB90281D30A30018B030 /* Extensions.swift */; };
 		D839EB93281D3F2A0018B030 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB92281D3F2A0018B030 /* TabBarButton.swift */; };
@@ -24,11 +24,8 @@
 		D839EBA7282117160018B030 /* HeaderForProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBA6282117160018B030 /* HeaderForProfile.swift */; };
 		D839EBAA2821178C0018B030 /* ColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBA92821178C0018B030 /* ColorSlider.swift */; };
 		D839EBAC282117C80018B030 /* SettingsViewForProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBAB282117C80018B030 /* SettingsViewForProfile.swift */; };
-		D839EBAF28211DCA0018B030 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBAE28211DCA0018B030 /* SettingsStore.swift */; };
 		D839EBB2282127650018B030 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBB1282127650018B030 /* Help.swift */; };
 		D839EBB428212B1F0018B030 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D839EBB328212B1F0018B030 /* Launch Screen.storyboard */; };
-		D839EBB628212CC10018B030 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBB528212CC10018B030 /* Option.swift */; };
-		D839EBB828212D6D0018B030 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EBB728212D6D0018B030 /* Settings.swift */; };
 		D839EBBF28217CD50018B030 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D839EBBE28217CD50018B030 /* GoogleService-Info.plist */; };
 		D85D8D7C28257BDF00AE076B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D7B28257BDF00AE076B /* FirebaseAnalytics */; };
 		D85D8D7E28257BDF00AE076B /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D85D8D7D28257BDF00AE076B /* FirebaseAnalyticsSwift */; };
@@ -47,15 +44,17 @@
 		D85F1BD4282687D20008DA21 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F1BD3282687D20008DA21 /* Helpers.swift */; };
 		D85F1BD6282695810008DA21 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F1BD5282695810008DA21 /* SFSafariViewWrapper.swift */; };
 		D85F1BD82826AA160008DA21 /* FungiImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F1BD72826AA160008DA21 /* FungiImage.swift */; };
+		D85F1BDA2827B0490008DA21 /* StorageUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F1BD92827B0490008DA21 /* StorageUserDefaults.swift */; };
+		D85F1BE02827C6D20008DA21 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F1BDF2827C6D20008DA21 /* RoundedButton.swift */; };
+		D85F1BE22827D4120008DA21 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F1BE12827D4120008DA21 /* About.swift */; };
+		D85F1BE42827D6050008DA21 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F1BE32827D6050008DA21 /* BundleExtension.swift */; };
 		D86B1583281D0711004A42DD /* FungiIncognitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1582281D0711004A42DD /* FungiIncognitaApp.swift */; };
 		D86B1585281D0711004A42DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1584281D0711004A42DD /* ContentView.swift */; };
 		D86B1587281D0714004A42DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86B1586281D0714004A42DD /* Assets.xcassets */; };
 		D86B158A281D0714004A42DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86B1589281D0714004A42DD /* Preview Assets.xcassets */; };
-		D86B1591281D154C004A42DD /* FungiList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1590281D154C004A42DD /* FungiList.swift */; };
 		D86B1595281D190D004A42DD /* FungiClassifierWithAugms.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D86B1594281D190D004A42DD /* FungiClassifierWithAugms.mlmodel */; };
 		D86B1597281D19E7004A42DD /* FungiShortInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1596281D19E7004A42DD /* FungiShortInfo.swift */; };
 		D86B159A281D203B004A42DD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1599281D203B004A42DD /* Colors.swift */; };
-		D86B159D281D2178004A42DD /* SearchBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B159C281D2178004A42DD /* SearchBlock.swift */; };
 		D883C3182821990C00958E7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D883C3172821990C00958E7C /* Localizable.strings */; };
 		D883C33B2822D97E00958E7C /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C33A2822D97E00958E7C /* AuthenticationService.swift */; };
 		D883C33D2822DA2600958E7C /* FungiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C33C2822DA2600958E7C /* FungiRepository.swift */; };
@@ -63,10 +62,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		014C9780B7E56DDCD042AE69 /* Pods_Fungi_Incognita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fungi_Incognita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D839EB88281D28D60018B030 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Views/HomeView.swift; sourceTree = "<group>"; };
+		D839EB88281D28D60018B030 /* FungiesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FungiesList.swift; path = Views/FungiesList.swift; sourceTree = "<group>"; };
 		D839EB8A281D28EF0018B030 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		D839EB8C281D29170018B030 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D839EB8C281D29170018B030 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		D839EB8E281D29840018B030 /* IdentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IdentificationView.swift; path = Views/IdentificationView.swift; sourceTree = "<group>"; };
 		D839EB90281D30A30018B030 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D839EB92281D3F2A0018B030 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarButton.swift; path = CustomUI/TabBarButton.swift; sourceTree = "<group>"; };
@@ -81,25 +79,24 @@
 		D839EBA6282117160018B030 /* HeaderForProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderForProfile.swift; sourceTree = "<group>"; };
 		D839EBA92821178C0018B030 /* ColorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSlider.swift; sourceTree = "<group>"; };
 		D839EBAB282117C80018B030 /* SettingsViewForProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewForProfile.swift; sourceTree = "<group>"; };
-		D839EBAE28211DCA0018B030 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		D839EBB1282127650018B030 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Help.swift; path = Views/Help.swift; sourceTree = "<group>"; };
 		D839EBB328212B1F0018B030 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		D839EBB528212CC10018B030 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
-		D839EBB728212D6D0018B030 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		D839EBBE28217CD50018B030 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Fungi Incognita/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D85F1BD3282687D20008DA21 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		D85F1BD5282695810008DA21 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFSafariViewWrapper.swift; path = Extensions/SFSafariViewWrapper.swift; sourceTree = "<group>"; };
 		D85F1BD72826AA160008DA21 /* FungiImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungiImage.swift; sourceTree = "<group>"; };
+		D85F1BD92827B0490008DA21 /* StorageUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageUserDefaults.swift; sourceTree = "<group>"; };
+		D85F1BDF2827C6D20008DA21 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		D85F1BE12827D4120008DA21 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = About.swift; path = Views/About.swift; sourceTree = "<group>"; };
+		D85F1BE32827D6050008DA21 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BundleExtension.swift; path = Extensions/BundleExtension.swift; sourceTree = "<group>"; };
 		D86B157F281D0711004A42DD /* Fungi Incognita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fungi Incognita.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86B1582281D0711004A42DD /* FungiIncognitaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungiIncognitaApp.swift; sourceTree = "<group>"; };
 		D86B1584281D0711004A42DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D86B1586281D0714004A42DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D86B1589281D0714004A42DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D86B1590281D154C004A42DD /* FungiList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungiList.swift; sourceTree = "<group>"; };
 		D86B1594281D190D004A42DD /* FungiClassifierWithAugms.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FungiClassifierWithAugms.mlmodel; path = Classifier/FungiClassifierWithAugms.mlmodel; sourceTree = SOURCE_ROOT; };
 		D86B1596281D19E7004A42DD /* FungiShortInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungiShortInfo.swift; sourceTree = "<group>"; };
 		D86B1599281D203B004A42DD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		D86B159C281D2178004A42DD /* SearchBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchBlock.swift; path = Views/SearchBlock.swift; sourceTree = "<group>"; };
 		D883C3162821861700958E7C /* Fungi-Incognita-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fungi-Incognita-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D883C3172821990C00958E7C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D883C33A2822D97E00958E7C /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
@@ -135,7 +132,6 @@
 		9947C6C6349E80A062682160 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				014C9780B7E56DDCD042AE69 /* Pods_Fungi_Incognita.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,6 +142,7 @@
 				D839EB9F281D5A310018B030 /* ImageExtension.swift */,
 				D839EB90281D30A30018B030 /* Extensions.swift */,
 				D85F1BD5282695810008DA21 /* SFSafariViewWrapper.swift */,
+				D85F1BE32827D6050008DA21 /* BundleExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -166,6 +163,7 @@
 			children = (
 				D839EBA92821178C0018B030 /* ColorSlider.swift */,
 				D85F1BD72826AA160008DA21 /* FungiImage.swift */,
+				D85F1BDF2827C6D20008DA21 /* RoundedButton.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -173,10 +171,7 @@
 		D839EBAD28211DB30018B030 /* SettingsView */ = {
 			isa = PBXGroup;
 			children = (
-				D839EBAE28211DCA0018B030 /* SettingsStore.swift */,
-				D839EB8C281D29170018B030 /* SettingsView.swift */,
-				D839EBB528212CC10018B030 /* Option.swift */,
-				D839EBB728212D6D0018B030 /* Settings.swift */,
+				D839EB8C281D29170018B030 /* InfoView.swift */,
 			);
 			path = SettingsView;
 			sourceTree = "<group>";
@@ -185,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				D85F1BD3282687D20008DA21 /* Helpers.swift */,
+				D85F1BD92827B0490008DA21 /* StorageUserDefaults.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -248,11 +244,10 @@
 				D839EBAD28211DB30018B030 /* SettingsView */,
 				D839EBA32821158B0018B030 /* ProfileView */,
 				D839EBA1281D5A550018B030 /* PhotoPicker.swift */,
-				D86B1590281D154C004A42DD /* FungiList.swift */,
-				D86B159C281D2178004A42DD /* SearchBlock.swift */,
-				D839EB88281D28D60018B030 /* HomeView.swift */,
+				D839EB88281D28D60018B030 /* FungiesList.swift */,
 				D839EB8E281D29840018B030 /* IdentificationView.swift */,
 				D839EBB1282127650018B030 /* Help.swift */,
+				D85F1BE12827D4120008DA21 /* About.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -423,19 +418,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D839EB89281D28D60018B030 /* HomeView.swift in Sources */,
+				D839EB89281D28D60018B030 /* FungiesList.swift in Sources */,
 				D839EBA0281D5A310018B030 /* ImageExtension.swift in Sources */,
-				D86B1591281D154C004A42DD /* FungiList.swift in Sources */,
 				D839EB95281D40110018B030 /* TabBarShape.swift in Sources */,
 				D839EBA7282117160018B030 /* HeaderForProfile.swift in Sources */,
 				D839EB8B281D28EF0018B030 /* ProfileView.swift in Sources */,
-				D86B159D281D2178004A42DD /* SearchBlock.swift in Sources */,
 				D839EBAA2821178C0018B030 /* ColorSlider.swift in Sources */,
 				D86B159A281D203B004A42DD /* Colors.swift in Sources */,
 				D86B1585281D0711004A42DD /* ContentView.swift in Sources */,
 				D839EBA2281D5A550018B030 /* PhotoPicker.swift in Sources */,
 				D839EB99281D4FD10018B030 /* TabBarItem.swift in Sources */,
 				D86B1597281D19E7004A42DD /* FungiShortInfo.swift in Sources */,
+				D85F1BE42827D6050008DA21 /* BundleExtension.swift in Sources */,
 				D839EB91281D30A30018B030 /* Extensions.swift in Sources */,
 				D839EB9D281D5A0F0018B030 /* Classifier.swift in Sources */,
 				D883C33D2822DA2600958E7C /* FungiRepository.swift in Sources */,
@@ -443,8 +437,6 @@
 				D883C33B2822D97E00958E7C /* AuthenticationService.swift in Sources */,
 				D86B1595281D190D004A42DD /* FungiClassifierWithAugms.mlmodel in Sources */,
 				D839EB93281D3F2A0018B030 /* TabBarButton.swift in Sources */,
-				D839EBB828212D6D0018B030 /* Settings.swift in Sources */,
-				D839EBAF28211DCA0018B030 /* SettingsStore.swift in Sources */,
 				D883C3432822DD0400958E7C /* Fungi.swift in Sources */,
 				D86B1583281D0711004A42DD /* FungiIncognitaApp.swift in Sources */,
 				D839EBAC282117C80018B030 /* SettingsViewForProfile.swift in Sources */,
@@ -452,11 +444,13 @@
 				D839EBA52821161D0018B030 /* UserSettings.swift in Sources */,
 				D839EBB2282127650018B030 /* Help.swift in Sources */,
 				D85F1BD4282687D20008DA21 /* Helpers.swift in Sources */,
+				D85F1BDA2827B0490008DA21 /* StorageUserDefaults.swift in Sources */,
 				D839EB9C281D5A0F0018B030 /* ImageClassifier.swift in Sources */,
+				D85F1BE02827C6D20008DA21 /* RoundedButton.swift in Sources */,
+				D85F1BE22827D4120008DA21 /* About.swift in Sources */,
 				D839EB97281D4D2E0018B030 /* Enums.swift in Sources */,
-				D839EBB628212CC10018B030 /* Option.swift in Sources */,
 				D85F1BD6282695810008DA21 /* SFSafariViewWrapper.swift in Sources */,
-				D839EB8D281D29170018B030 /* SettingsView.swift in Sources */,
+				D839EB8D281D29170018B030 /* InfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

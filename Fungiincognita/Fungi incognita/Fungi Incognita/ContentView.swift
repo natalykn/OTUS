@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTabBar = TabImems.home
-    @State public var xOffSet: CGFloat = 0
-    @ObservedObject var settings: SettingsStore = SettingsStore()
+    @State public var xOffSet: Double = 0
     @EnvironmentObject var fungiRepository: FungiRepository
 
-    init() { UITabBar.appearance().isHidden = true }
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
 
     var body: some View {
 
@@ -23,17 +24,15 @@ struct ContentView: View {
             TabView(selection: $selectedTabBar) {
                 switch selectedTabBar {
                 case .home:
-                    HomeView().environmentObject(fungiRepository)
+                    FungiesList(onlyFavorities: false).environmentObject(fungiRepository)
                 case .favList:
-                    FungiList()
+                    FungiesList(onlyFavorities: true).environmentObject(fungiRepository)
                 case .identificationFungi:
                     IdentificationView(classifier: ImageClassifier())
                 case .person:
                     ProfileView()
-                        .environmentObject(settings)
                 case .settings:
-                    SettingsView()
-                        .environmentObject(settings)
+                    InfoView()
                 }
             }
 
@@ -67,7 +66,7 @@ struct ContentView: View {
                            isFirst: false,
                            xOffSet: $xOffSet)
                 Spacer(minLength: 0)
-                TabBarItem(imageName: "gearshape",
+                TabBarItem(imageName: "info.circle",
                            tag: .settings,
                            selectedTabBar: $selectedTabBar,
                            isSystemImage: true,
@@ -75,7 +74,7 @@ struct ContentView: View {
                            xOffSet: $xOffSet)
             }
             .padding(.horizontal, 25).padding(.vertical)
-            .background(Color.white.clipShape(CustomShape(xOffSet: xOffSet)).cornerRadius(10))
+            .background(mainColors.clipShape(CustomShape(xOffSet: xOffSet)).cornerRadius(10))
             .padding(.horizontal)
         }
     }

@@ -34,7 +34,6 @@ struct SettingsViewForProfile: View {
 }
 struct ProfileSettings: View {
     @AppStorage("name") var name = DefaultSettings.name
-    @AppStorage("subtitle") var subtitle = DefaultSettings.subtitle
     @AppStorage("description") var description = DefaultSettings.description
     @AppStorage("profileUrl") var profileUrl = DefaultSettings.profileUrl
 
@@ -53,7 +52,6 @@ struct ProfileSettings: View {
                 }
             )
             TextField("Name", text: $name)
-            TextField("Subtitle", text: $subtitle)
             TextEditor(text: $description)
                 .padding(.leading, -5.0)
         }

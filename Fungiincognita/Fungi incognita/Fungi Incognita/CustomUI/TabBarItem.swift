@@ -13,7 +13,7 @@ struct TabBarItem: View {
     @Binding var selectedTabBar: TabImems
     var isSystemImage: Bool
     var isFirst: Bool = false
-    @Binding var xOffSet: CGFloat
+    @Binding var xOffSet: Double
     var body: some View {
         GeometryReader { reader in
             TabbarButton(image: imageName, tag: tag, selectedTabBar:

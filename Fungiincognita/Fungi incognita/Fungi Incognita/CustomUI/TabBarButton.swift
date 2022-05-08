@@ -17,6 +17,7 @@ struct TabbarButton: View {
     public var xOffSet: CGFloat = 0
     public var imageSize: CGFloat = 25
     public var isSystemImage: Bool = false
+    public var backgroundColor: Color = mainColors
     let action: () -> Void
 
     var body: some View {
@@ -26,9 +27,9 @@ struct TabbarButton: View {
                 .renderingMode(.template)
                 .scaledToFit()
                 .frame(width: imageSize, height: imageSize)
-                .foregroundColor(selectedTabBar == tag ? colorForSelected : Color.gray)
+                .foregroundColor(selectedTabBar == tag ? colorForSelected : colorForSelected.opacity(0.6))
                 .padding(selectedTabBar == tag ? 15 : 0)
-                .background(Color.white.opacity(selectedTabBar == tag ? 1 : 0)
+                .background(backgroundColor.opacity(selectedTabBar == tag ? 1 : 0)
                     .clipShape(Circle()))
                 .offset(x: selectedTabBar == tag ? (reader.frame(in: .global).minX-reader.frame(in: .global).midX) : 0,
                         y: selectedTabBar == tag ? -2*imageSize : 0)
