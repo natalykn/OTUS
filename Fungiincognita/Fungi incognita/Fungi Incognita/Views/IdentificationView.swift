@@ -28,10 +28,10 @@ struct IdentificationView: View {
                     }
             }
             .font(.title)
-            .foregroundColor(.blue)
+            .foregroundColor(mainColors)
             Rectangle()
                 .strokeBorder()
-                .foregroundColor(.yellow)
+                .foregroundColor(mainColors)
                 .overlay(
                     Group {
                         if uiImage != nil {
