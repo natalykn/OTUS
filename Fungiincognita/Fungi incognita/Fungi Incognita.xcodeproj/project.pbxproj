@@ -11,7 +11,6 @@
 		D839EB8B281D28EF0018B030 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB8A281D28EF0018B030 /* ProfileView.swift */; };
 		D839EB8D281D29170018B030 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB8C281D29170018B030 /* InfoView.swift */; };
 		D839EB8F281D29840018B030 /* IdentificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB8E281D29840018B030 /* IdentificationView.swift */; };
-		D839EB91281D30A30018B030 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB90281D30A30018B030 /* Extensions.swift */; };
 		D839EB93281D3F2A0018B030 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB92281D3F2A0018B030 /* TabBarButton.swift */; };
 		D839EB95281D40110018B030 /* TabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB94281D40110018B030 /* TabBarShape.swift */; };
 		D839EB97281D4D2E0018B030 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839EB96281D4D2E0018B030 /* Enums.swift */; };
@@ -66,7 +65,6 @@
 		D839EB8A281D28EF0018B030 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D839EB8C281D29170018B030 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		D839EB8E281D29840018B030 /* IdentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IdentificationView.swift; path = Views/IdentificationView.swift; sourceTree = "<group>"; };
-		D839EB90281D30A30018B030 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D839EB92281D3F2A0018B030 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarButton.swift; path = CustomUI/TabBarButton.swift; sourceTree = "<group>"; };
 		D839EB94281D40110018B030 /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
 		D839EB96281D4D2E0018B030 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = CommonLets/Enums.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				D839EB9F281D5A310018B030 /* ImageExtension.swift */,
-				D839EB90281D30A30018B030 /* Extensions.swift */,
 				D85F1BD5282695810008DA21 /* SFSafariViewWrapper.swift */,
 				D85F1BE32827D6050008DA21 /* BundleExtension.swift */,
 			);
@@ -430,7 +427,6 @@
 				D839EB99281D4FD10018B030 /* TabBarItem.swift in Sources */,
 				D86B1597281D19E7004A42DD /* FungiShortInfo.swift in Sources */,
 				D85F1BE42827D6050008DA21 /* BundleExtension.swift in Sources */,
-				D839EB91281D30A30018B030 /* Extensions.swift in Sources */,
 				D839EB9D281D5A0F0018B030 /* Classifier.swift in Sources */,
 				D883C33D2822DA2600958E7C /* FungiRepository.swift in Sources */,
 				D839EB8F281D29840018B030 /* IdentificationView.swift in Sources */,
