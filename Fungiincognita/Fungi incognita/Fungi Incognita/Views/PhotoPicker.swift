@@ -38,9 +38,9 @@ struct PhotoPicker: UIViewControllerRepresentable {
                         return
                     }
                     self.parent.uiImage = newImage.aspectFittedToHeight(imageSize)
+                    parent.isPresenting = false
                 })
             }
-            parent.isPresenting = false
         }
 
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
