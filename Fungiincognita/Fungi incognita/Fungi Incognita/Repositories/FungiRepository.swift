@@ -24,6 +24,7 @@ class FungiRepository: ObservableObject {
     private var cancellables: Set<AnyCancellable> = []
 
     init() {
+        databaseSetup()
         authenticationService.$user
             .compactMap { user in
                 user?.uid
@@ -40,13 +41,24 @@ class FungiRepository: ObservableObject {
         favorites = getStrings(data: favoritesData)
     }
 
+    func databaseSetup() {
+        let settings = FirestoreSettings()
+        settings.isPersistenceEnabled = true
+        settings.cacheSizeBytes = FirestoreCacheSizeUnlimited
+        store.settings = settings
+
+    }
+
     func get() {
-        store
-            .collection(path)
-            .addSnapshotListener { querySnapshot, error in
-                if let error = error {
-                    print("Error getting fungies: \(error.localizedDescription)")
+        store.collection(path)
+            .addSnapshotListener(includeMetadataChanges: true) { querySnapshot, error in
+                guard let snapshot = querySnapshot else {
+                    print("Error retreiving snapshot: \(error!)")
                     return
+                }
+
+                for diff in snapshot.documentChanges where  diff.type == .added {
+                    print("New fungi: \(diff.document.data())")
                 }
                 self.fungies = querySnapshot?.documents.compactMap { document in
                     return try? document.data(as: Fungi.self)
@@ -54,6 +66,9 @@ class FungiRepository: ObservableObject {
                 self.fungies.sort {
                     $0.name < $1.name
                 }
+
+                let source = snapshot.metadata.isFromCache ? "local cache" : "server"
+                print("Metadata: Data fetched from \(source)")
             }
     }
 
