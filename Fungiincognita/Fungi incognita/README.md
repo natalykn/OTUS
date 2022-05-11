@@ -1,23 +1,23 @@
-Приложение позволяет определять по картинке вид гриба
+The application allows you to determine the type of mushroom from а picture selected from your phone’s photo library using on-device machine learning. The model was trained using Create ML application on the data provided by Kaggle and Mushroom World 
 
-![main](https://github.com/natalykn/OTUS/blob/main/Fungiincognita/Fungi%20incognita/assets/main.PNG)
-
-![detect](https://github.com/natalykn/OTUS/blob/main/Fungiincognita/Fungi%20incognita/assets/detect.PNG)
+https://www.kaggle.com/datasets/anilkrsah/deepmushroom
 
 
-модель обучалась с использованием Create ML
+![main](https://github.com/natalykn/OTUS/blob/main/Fungiincognita/Fungi%20incognita/assets/main.PNG) ![detect](https://github.com/natalykn/OTUS/blob/main/Fungiincognita/Fungi%20incognita/assets/detect.PNG)
 
 ![модель](https://github.com/natalykn/OTUS/blob/main/Fungiincognita/Fungi%20incognita/assets/modelInfo.png)
 
-Приложение использует Firebase:
-- Anonymous - анонимная авторизация 
-- Firestore Database для хранения справочной информации по определяемым видам грибов
-- Storage для хранения картинок 
+The application uses following Google’s Firebase services:
 
-Реализованы:
-- офлайн режим работы, позволяющий отображать справочную информацию без подключения к сети
-- режим кеширования изображения грибов
-- автоподсказка при поиске справочной информации о грибе
-- сохраняется строка поиска, позволяющая после запуска приложения вернуться к предыдущему поиску
+- Anonymous Authorization  for anonymous authorization
+- Firestore Database for storing reference information on identified mushroom species
+- Storage for storing pictures
+
+Also the application Implements:
+
+- offline mode of operation that allows you to display help information without connecting to the network
+- mushroom images cache
+- auto-suggestion help search about mushrooms
+- recent search history allowing you to return to the previous search after the application is launched
 
 
