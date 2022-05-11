@@ -9,7 +9,18 @@ import SwiftUI
 
 struct Help: View {
     var body: some View {
-        Text("Help")
+        List(0..<20) { index in
+            ZStack(alignment: .leading) {
+                NavigationLink(
+                    destination: Text("Answer #\(index+1)")) {
+                        EmptyView()
+                    }
+                    .opacity(0)
+                Text("Question #\(index+1)")
+            }
+            .navigationTitle("Help")
+        }
+        .padding(.bottom, 80)
     }
 }
 
