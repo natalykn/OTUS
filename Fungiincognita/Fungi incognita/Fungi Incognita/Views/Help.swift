@@ -12,7 +12,7 @@ struct Help: View {
         List(0..<20) { index in
             ZStack(alignment: .leading) {
                 NavigationLink(
-                    destination: Text("Answer #\(index+1)")) {
+                    destination: AnswerCell(idAnswer: index)) {
                         EmptyView()
                     }
                     .opacity(0)

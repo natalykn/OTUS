@@ -54,6 +54,7 @@
 		D86B1595281D190D004A42DD /* FungiClassifierWithAugms.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D86B1594281D190D004A42DD /* FungiClassifierWithAugms.mlmodel */; };
 		D86B1597281D19E7004A42DD /* FungiShortInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1596281D19E7004A42DD /* FungiShortInfo.swift */; };
 		D86B159A281D203B004A42DD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B1599281D203B004A42DD /* Colors.swift */; };
+		D874F73F282BA0E600F69CE0 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874F73E282BA0E600F69CE0 /* AnswerCell.swift */; };
 		D883C3182821990C00958E7C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D883C3172821990C00958E7C /* Localizable.strings */; };
 		D883C33B2822D97E00958E7C /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C33A2822D97E00958E7C /* AuthenticationService.swift */; };
 		D883C33D2822DA2600958E7C /* FungiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883C33C2822DA2600958E7C /* FungiRepository.swift */; };
@@ -95,6 +96,7 @@
 		D86B1594281D190D004A42DD /* FungiClassifierWithAugms.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FungiClassifierWithAugms.mlmodel; path = Classifier/FungiClassifierWithAugms.mlmodel; sourceTree = SOURCE_ROOT; };
 		D86B1596281D19E7004A42DD /* FungiShortInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FungiShortInfo.swift; sourceTree = "<group>"; };
 		D86B1599281D203B004A42DD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D874F73E282BA0E600F69CE0 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnswerCell.swift; path = Cells/AnswerCell.swift; sourceTree = "<group>"; };
 		D883C3162821861700958E7C /* Fungi-Incognita-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Fungi-Incognita-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D883C3172821990C00958E7C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D883C33A2822D97E00958E7C /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				D86B1596281D19E7004A42DD /* FungiShortInfo.swift */,
+				D874F73E282BA0E600F69CE0 /* AnswerCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				D839EB89281D28D60018B030 /* FungiesList.swift in Sources */,
 				D839EBA0281D5A310018B030 /* ImageExtension.swift in Sources */,
 				D839EB95281D40110018B030 /* TabBarShape.swift in Sources */,
+				D874F73F282BA0E600F69CE0 /* AnswerCell.swift in Sources */,
 				D839EBA7282117160018B030 /* HeaderForProfile.swift in Sources */,
 				D839EB8B281D28EF0018B030 /* ProfileView.swift in Sources */,
 				D839EBAA2821178C0018B030 /* ColorSlider.swift in Sources */,
