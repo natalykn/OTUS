@@ -16,18 +16,21 @@ struct TabBarItem: View {
     @Binding var xOffSet: Double
     var body: some View {
         GeometryReader { reader in
-            TabbarButton(image: imageName, tag: tag, selectedTabBar:
-                            selectedTabBar, reader: reader, isSystemImage: isSystemImage) {
+            TabbarButton(image: imageName,
+                         tag: tag,
+                         selectedTabBar: selectedTabBar,
+                         reader: reader,
+                         isSystemImage: isSystemImage) {
                 withAnimation(Animation.linear(duration: 0.3)) {
                     selectedTabBar = tag
                     xOffSet = reader.frame(in: .global).minX
                 }
             }
-                            .onAppear(perform: {
-                                if isFirst == true {
-                                    xOffSet = reader.frame(in: .global).minX
-                                }
-                            })
+                         .onAppear(perform: {
+                             if isFirst == true {
+                                 xOffSet = reader.frame(in: .global).minX
+                             }
+                         })
         }.frame(width: 30, height: 30)
     }
 }

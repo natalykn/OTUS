@@ -66,10 +66,10 @@
 		D839EB8A281D28EF0018B030 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D839EB8C281D29170018B030 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		D839EB8E281D29840018B030 /* IdentificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IdentificationView.swift; path = Views/IdentificationView.swift; sourceTree = "<group>"; };
-		D839EB92281D3F2A0018B030 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarButton.swift; path = CustomUI/TabBarButton.swift; sourceTree = "<group>"; };
+		D839EB92281D3F2A0018B030 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		D839EB94281D40110018B030 /* TabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarShape.swift; sourceTree = "<group>"; };
 		D839EB96281D4D2E0018B030 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = CommonLets/Enums.swift; sourceTree = "<group>"; };
-		D839EB98281D4FD10018B030 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarItem.swift; path = CustomUI/TabBarItem.swift; sourceTree = "<group>"; };
+		D839EB98281D4FD10018B030 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		D839EB9A281D5A0F0018B030 /* ImageClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageClassifier.swift; path = Classifier/ImageClassifier.swift; sourceTree = SOURCE_ROOT; };
 		D839EB9B281D5A0F0018B030 /* Classifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Classifier.swift; path = Classifier/Classifier.swift; sourceTree = SOURCE_ROOT; };
 		D839EB9F281D5A310018B030 /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageExtension.swift; path = Extensions/ImageExtension.swift; sourceTree = "<group>"; };
@@ -160,6 +160,7 @@
 		D839EBA8282117780018B030 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D874F740282BA40400F69CE0 /* Tabbar */,
 				D839EBA92821178C0018B030 /* ColorSlider.swift */,
 				D85F1BD72826AA160008DA21 /* FungiImage.swift */,
 				D85F1BDF2827C6D20008DA21 /* RoundedButton.swift */,
@@ -221,9 +222,6 @@
 				D86B1584281D0711004A42DD /* ContentView.swift */,
 				D86B1586281D0714004A42DD /* Assets.xcassets */,
 				D86B1588281D0714004A42DD /* Preview Content */,
-				D839EB92281D3F2A0018B030 /* TabBarButton.swift */,
-				D839EB98281D4FD10018B030 /* TabBarItem.swift */,
-				D839EB94281D40110018B030 /* TabBarShape.swift */,
 				D883C3172821990C00958E7C /* Localizable.strings */,
 			);
 			path = "Fungi Incognita";
@@ -277,6 +275,16 @@
 				D839EB96281D4D2E0018B030 /* Enums.swift */,
 			);
 			name = CommonLets;
+			sourceTree = "<group>";
+		};
+		D874F740282BA40400F69CE0 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				D839EB92281D3F2A0018B030 /* TabBarButton.swift */,
+				D839EB98281D4FD10018B030 /* TabBarItem.swift */,
+				D839EB94281D40110018B030 /* TabBarShape.swift */,
+			);
+			name = Tabbar;
 			sourceTree = "<group>";
 		};
 		D883C3362822D8F600958E7C /* Services */ = {
