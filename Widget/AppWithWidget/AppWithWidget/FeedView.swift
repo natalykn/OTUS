@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct FeedView: View {
+    @EnvironmentObject var suffixModel: SuffixModel
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            List{
+                ForEach(self.suffixModel.history, id:\.self){ text in
+                    Text(text)
+                }
+            }
+        }
     }
 }
 

@@ -22,12 +22,13 @@ struct MainView: View {
                 .border(.secondary)
                 .padding()
                 .onChange(of: text, perform: { value in
+                    
                 })
+                .onAppear()
             Button("Create suffix array") {
-                self.suffixModel.addNewValues(text)
-                print (self.suffixModel.suffixValues.sorted(by: <))
                 UIApplication.shared.endEditing()
-
+                self.suffixModel.addNewValues(text)
+                text = ""
             }
             Spacer()
         }

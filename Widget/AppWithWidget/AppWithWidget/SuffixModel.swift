@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import WidgetKit
+import Combine
 
 typealias SuffixInfo = (key: Substring, value: Int)
 
@@ -18,6 +19,8 @@ class SuffixModel: ObservableObject {
     
     @AppStorage("top3", store: UserDefaults(suiteName: "group.com.natalykn.ShareExtension"))
     var top3: Data = Data()
+
+    @AppStorage("history") var history: [String] = []
 
     init() {
         guard let _ = try? JSONDecoder().decode(Array<String>.self,
@@ -42,6 +45,7 @@ class SuffixModel: ObservableObject {
     }
 
     func addNewValues (_ newText:String){
+        history.append(newText.trim())
         newText.trim().suffixArray().frequency.forEach { (k,v) in
             if let value = self.suffixValues[k] {
                 self.suffixValues[k] = value + v
