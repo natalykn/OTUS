@@ -32,6 +32,7 @@ extension URL {
         switch host {
         case "newText": return .newText
         case "history": return .history
+        case "resultView": return .resultView
         default: return nil
         }
     }

@@ -24,13 +24,21 @@ struct ContentView: View {
                     Text("New text")
                 }
                 .tag(TabIdentifier.newText)
-            History()
+            ResultView()
+                .environmentObject(suffixModel)
+                .tabItem {
+                    Image(systemName: "rectangle.and.pencil.and.ellipsis")
+                    Text("Result")
+                }
+                .tag(TabIdentifier.resultView)
+            FeedView()
                 .environmentObject(suffixModel)
                 .tabItem {
                     Image(systemName: "square.fill.text.grid.1x2")
                     Text("History")
                 }
                 .tag(TabIdentifier.history)
+
         }
         .onOpenURL { url in
             guard let tabIdentifier = url.tabIdentifier else {

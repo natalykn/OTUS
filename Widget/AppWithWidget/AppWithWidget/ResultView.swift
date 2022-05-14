@@ -1,5 +1,5 @@
 //
-//  History.swift
+//  ResultView.swift
 //  AppWithWidget
 //
 //  Created by Natalia Andryushina on 2022-03-28.
@@ -9,7 +9,7 @@ import SwiftUI
 
 let topCountValue = 10
 
-struct History: View {
+struct ResultView: View {
     @EnvironmentObject var suffixModel: SuffixModel
     @State private var selection:Int = SegmentIdentifier.allValues.rawValue
     @State private var sortByASC = true
@@ -64,8 +64,8 @@ struct ListValues: View {
 }
 
 
-struct History_Previews: PreviewProvider {
+struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        History()
+        ResultView()
     }
 }
